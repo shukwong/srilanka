@@ -4,8 +4,8 @@ description: >
   Custom tours, airport transfers, and unforgettable multi-day packages
   across the beautiful island of Sri Lanka.
 
-url: ""
-baseurl: ""
+url: "https://shukwong.github.io"
+baseurl: "/srilanka"   # ← repo name; remove if using a custom domain or user/org site (username.github.io)
 
 # ──────────────────────────────────────────────────────────────
 # DRIVER CONTACT — edit these values to update the whole site
