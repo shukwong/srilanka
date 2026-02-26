@@ -27,7 +27,6 @@ permalink: /itinerary/
           <h2 id="itin-{{ itinerary.id }}">{{ itinerary.title }}</h2>
           <div class="itinerary-badges">
             <span class="badge badge--duration">🗓️ {{ itinerary.duration }}</span>
-            <span class="badge badge--price">From {{ itinerary.price_from }}</span>
           </div>
         </div>
       </div>
@@ -57,7 +56,7 @@ permalink: /itinerary/
            rel="noopener">
           💬 Book This Tour
         </a>
-        <span class="itinerary-note">Starting from {{ itinerary.price_from }} · Fully customisable</span>
+        <span class="itinerary-note">Fully customisable</span>
       </div>
     </article>
     {% endfor %}
@@ -130,11 +129,6 @@ permalink: /itinerary/
 .badge--duration {
   background: #e8f4f8;
   color: #1a6b7a;
-}
-
-.badge--price {
-  background: #fef3e2;
-  color: #a06020;
 }
 
 .itinerary-summary {
