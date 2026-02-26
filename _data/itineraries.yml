@@ -1,7 +1,6 @@
 - id: 3-day-cultural
   title: 3-Day Cultural Triangle
   duration: 3 days
-  price_from: "$220"
   icon: 🏛️
   summary: >
     Discover Sri Lanka's ancient UNESCO World Heritage heartland — towering rock fortresses,
@@ -29,7 +28,6 @@
 - id: 5-day-highlights
   title: 5-Day Sri Lanka Highlights
   duration: 5 days
-  price_from: "$380"
   icon: 🌿
   summary: >
     The perfect first-time Sri Lanka tour: ancient wonders, misty tea plantations,
@@ -71,7 +69,6 @@
 - id: 7-day-explorer
   title: 7-Day Island Explorer
   duration: 7 days
-  price_from: "$550"
   icon: 🌊
   summary: >
     See the full sweep of Sri Lanka — its ancient ruins, jungle wildlife, lush tea highlands,
