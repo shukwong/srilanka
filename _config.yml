@@ -1,0 +1,78 @@
+title: Mifras — Sri Lanka Private Driver
+description: >
+  Explore Sri Lanka with Mifras, your trusted private driver and guide.
+  Custom tours, airport transfers, and unforgettable multi-day packages
+  across the beautiful island of Sri Lanka.
+
+url: ""
+baseurl: ""
+
+# ──────────────────────────────────────────────────────────────
+# DRIVER CONTACT — edit these values to update the whole site
+# ──────────────────────────────────────────────────────────────
+driver:
+  name: Mifras
+  phone: "+94 76 063 6310"
+  whatsapp: "94760636310"        # Digits only, no + or spaces, for wa.me links
+  whatsapp_display: "+94 76 063 6310"
+  email: "mifras@example.com"    # Replace with real email
+  location: "Colombo, Sri Lanka"
+  languages:
+    - English
+    - Sinhala
+    - Tamil
+  vehicle: "Air-conditioned Toyota KDH Van / Sedan Car"
+  experience_years: 10
+  license: "Government Licensed Tour Driver"
+
+# ──────────────────────────────────────────────────────────────
+# SOCIAL LINKS — leave blank ("") to hide from footer
+# ──────────────────────────────────────────────────────────────
+social:
+  facebook: ""
+  instagram: ""
+  tripadvisor: ""
+
+# ──────────────────────────────────────────────────────────────
+# SEO & SITE META
+# ──────────────────────────────────────────────────────────────
+author: Mifras
+timezone: Asia/Colombo
+lang: en
+
+# ──────────────────────────────────────────────────────────────
+# COLLECTIONS
+# ──────────────────────────────────────────────────────────────
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+defaults:
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: page
+
+# ──────────────────────────────────────────────────────────────
+# PLUGINS
+# ──────────────────────────────────────────────────────────────
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# ──────────────────────────────────────────────────────────────
+# BUILD SETTINGS
+# ──────────────────────────────────────────────────────────────
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - README.md
+  - "*.sh"

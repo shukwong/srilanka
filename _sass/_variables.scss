@@ -1,0 +1,49 @@
+// ============================================================
+// VARIABLES — Edit here to retheme the entire site
+// ============================================================
+
+// Colors
+$color-primary:     #1a6b7a;   // Deep teal (main brand color)
+$color-primary-dark:#124f5b;   // Darker teal for hover states
+$color-accent:      #f4a621;   // Warm saffron (Sri Lanka golden)
+$color-accent-dark: #d4891a;   // Darker accent for hover
+$color-dark:        #1c1c1e;   // Near-black for headings
+$color-text:        #4a4a4a;   // Body text grey
+$color-text-light:  #777777;   // Muted text, captions
+$color-light:       #f8f7f4;   // Warm off-white background
+$color-white:       #ffffff;
+$color-border:      #e8e4de;
+$color-overlay:     rgba(28, 28, 30, 0.55);  // Hero overlay
+
+// WhatsApp green
+$color-whatsapp:    #25d366;
+$color-whatsapp-dark: #1da851;
+
+// Typography
+$font-heading: 'Poppins', sans-serif;
+$font-body:    'Inter', sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.7;
+
+// Spacing
+$section-padding-lg: 5rem 0;
+$section-padding-md: 3.5rem 0;
+$section-padding-sm: 2rem 0;
+
+// Layout
+$container-max:  1100px;
+$container-pad:  1.25rem;
+
+// Components
+$border-radius:  8px;
+$border-radius-lg: 16px;
+$box-shadow:     0 2px 16px rgba(0,0,0,0.08);
+$box-shadow-hover: 0 8px 32px rgba(0,0,0,0.14);
+
+// Transitions
+$transition: all 0.3s ease;
+
+// Breakpoints
+$bp-mobile:  480px;
+$bp-tablet:  768px;
+$bp-desktop: 1024px;

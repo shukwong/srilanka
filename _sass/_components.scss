@@ -1,0 +1,424 @@
+// ============================================================
+// COMPONENTS — Buttons, badges, FAQ accordion, misc
+// ============================================================
+
+// ── Buttons ──────────────────────────────────────────────────
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: $font-heading;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.75rem 1.6rem;
+  border-radius: $border-radius;
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: $transition;
+  white-space: nowrap;
+  line-height: 1.2;
+
+  // Touch-friendly minimum size
+  min-height: 48px;
+
+  &--primary {
+    background: $color-accent;
+    color: $color-dark;
+    border-color: $color-accent;
+
+    &:hover {
+      background: $color-accent-dark;
+      border-color: $color-accent-dark;
+      color: $color-dark;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba($color-accent, 0.4);
+    }
+  }
+
+  &--outline {
+    background: transparent;
+    color: $color-white;
+    border-color: rgba($color-white, 0.6);
+
+    &:hover {
+      background: $color-white;
+      color: $color-primary;
+      border-color: $color-white;
+    }
+  }
+
+  &--outline-dark {
+    background: transparent;
+    color: $color-primary;
+    border-color: $color-primary;
+
+    &:hover {
+      background: $color-primary;
+      color: $color-white;
+    }
+  }
+
+  &--white {
+    background: $color-white;
+    color: $color-primary;
+    border-color: $color-white;
+
+    &:hover {
+      background: darken($color-white, 5%);
+      color: $color-primary-dark;
+      transform: translateY(-1px);
+    }
+  }
+
+  &--outline-white {
+    background: transparent;
+    color: $color-white;
+    border-color: rgba($color-white, 0.7);
+
+    &:hover {
+      background: $color-white;
+      color: $color-primary;
+      border-color: $color-white;
+    }
+  }
+
+  &--whatsapp {
+    background: $color-whatsapp;
+    color: $color-white;
+    border-color: $color-whatsapp;
+
+    &:hover {
+      background: $color-whatsapp-dark;
+      border-color: $color-whatsapp-dark;
+      color: $color-white;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba($color-whatsapp, 0.4);
+    }
+  }
+
+  &--lg {
+    font-size: 1rem;
+    padding: 0.9rem 2rem;
+    min-height: 54px;
+  }
+
+  &--sm {
+    font-size: 0.8rem;
+    padding: 0.5rem 1.1rem;
+    min-height: 40px;
+  }
+}
+
+// ── Badges ───────────────────────────────────────────────────
+.badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.65rem;
+  border-radius: 100px;
+  background: rgba($color-primary, 0.1);
+  color: $color-primary;
+
+  &--accent {
+    background: rgba($color-accent, 0.15);
+    color: darken($color-accent, 20%);
+  }
+}
+
+// ── Star rating ───────────────────────────────────────────────
+.stars {
+  color: $color-accent;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+}
+
+// ── FAQ Accordion ─────────────────────────────────────────────
+.faq-list {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid $color-border;
+
+  &:first-child { border-top: 1px solid $color-border; }
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding: 1.25rem 0;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: $font-heading;
+  font-size: 1rem;
+  font-weight: 500;
+  color: $color-dark;
+  transition: $transition;
+
+  // Touch-friendly
+  min-height: 56px;
+
+  &:hover { color: $color-primary; }
+
+  .faq-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: $color-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: $color-primary;
+    transition: $transition;
+  }
+
+  &[aria-expanded="true"] {
+    color: $color-primary;
+    .faq-icon { transform: rotate(45deg); }
+  }
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 0 1.25rem;
+  color: $color-text;
+  line-height: 1.75;
+
+  &.is-open { display: block; }
+}
+
+// ── About page highlights ─────────────────────────────────────
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: 2rem;
+
+  @media (max-width: $bp-mobile) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.highlight-item {
+  display: flex;
+  gap: 0.85rem;
+  align-items: flex-start;
+  padding: 1.1rem;
+  border-radius: $border-radius;
+  background: $color-light;
+  border: 1px solid $color-border;
+
+  .highlight-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    line-height: 1;
+    margin-top: 0.1rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+    color: $color-text-light;
+    margin: 0;
+  }
+}
+
+// ── Contact page ──────────────────────────────────────────────
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: start;
+
+  @media (max-width: $bp-tablet) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.contact-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+
+  .contact-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    background: rgba($color-primary, 0.1);
+    border-radius: $border-radius;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h4 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: $color-text-light;
+    margin-bottom: 0.2rem;
+  }
+
+  a, p {
+    font-weight: 500;
+    color: $color-dark;
+    margin: 0;
+  }
+
+  a:hover { color: $color-primary; }
+}
+
+.whatsapp-cta-box {
+  background: linear-gradient(135deg, $color-whatsapp, $color-whatsapp-dark);
+  color: $color-white;
+  border-radius: $border-radius-lg;
+  padding: 2rem;
+  text-align: center;
+
+  h3 { color: $color-white; margin-bottom: 0.5rem; }
+  p  { color: rgba($color-white, 0.88); margin-bottom: 1.5rem; font-size: 0.95rem; }
+
+  .btn--white {
+    background: $color-white;
+    color: $color-whatsapp-dark;
+    border-color: $color-white;
+    font-weight: 700;
+
+    &:hover {
+      background: darken($color-white, 6%);
+      transform: translateY(-1px);
+    }
+  }
+}
+
+// ── CTA Banner ─────────────────────────────────────────────────
+.cta-banner {
+  background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
+  color: $color-white;
+  padding: 4.5rem 0;
+  text-align: center;
+
+  @media (max-width: $bp-tablet) {
+    padding: 3rem 0;
+  }
+
+  &__content {
+    max-width: 680px;
+    margin: 0 auto;
+
+    h2 {
+      color: $color-white;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      color: rgba($color-white, 0.85);
+      font-size: 1.05rem;
+      margin-bottom: 0;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+}
+
+// ── Feature cards (home page why-choose section) ───────────────
+.feature-card {
+  background: $color-white;
+  border: 1px solid $color-border;
+  border-radius: $border-radius-lg;
+  padding: 1.75rem;
+  transition: $transition;
+
+  &:hover {
+    box-shadow: $box-shadow-hover;
+    transform: translateY(-3px);
+    border-color: rgba($color-primary, 0.3);
+  }
+
+  .feature-icon {
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+    display: inline-block;
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 0.88rem;
+    color: $color-text-light;
+    margin: 0;
+    line-height: 1.65;
+  }
+}
+
+// ── About page intro layout ────────────────────────────────────
+.about-intro {
+  display: grid;
+  gap: 3rem;
+  align-items: start;
+
+  @media (min-width: $bp-tablet) {
+    grid-template-columns: 280px 1fr;
+  }
+
+  &__image {
+    .photo-placeholder {
+      background: linear-gradient(135deg, rgba($color-primary, 0.1), rgba($color-accent, 0.1));
+      border: 2px dashed $color-border;
+      border-radius: $border-radius-lg;
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+  }
+
+  &__content {
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      margin-top: 0.5rem;
+    }
+  }
+}

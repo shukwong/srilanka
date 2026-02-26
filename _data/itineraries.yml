@@ -1,0 +1,123 @@
+- id: 3-day-cultural
+  title: 3-Day Cultural Triangle
+  duration: 3 days
+  price_from: "$220"
+  icon: 🏛️
+  summary: >
+    Discover Sri Lanka's ancient UNESCO World Heritage heartland — towering rock fortresses,
+    sacred cave temples, and ruined royal cities that have stood for over 2,000 years.
+  days:
+    - day: 1
+      title: Sigiriya & Dambulla
+      highlights:
+        - Morning: Sigiriya Lion Rock (UNESCO) — climb the ancient fortress and enjoy panoramic views
+        - Afternoon: Dambulla Cave Temple (UNESCO) — 153 Buddha statues and 2,100-year-old murals
+        - Evening: Settle into Habarana / Sigiriya village guesthouse
+    - day: 2
+      title: Polonnaruwa Ancient City
+      highlights:
+        - Morning: Polonnaruwa Archaeological Park (UNESCO) — Gal Vihara rock temple, royal palace ruins
+        - Afternoon: Minneriya National Park (optional add-on) — elephant gathering
+        - Evening: Local restaurant dinner and cultural village walk
+    - day: 3
+      title: Return with Scenic Stops
+      highlights:
+        - Morning: Spice garden visit near Matale
+        - Afternoon: Kandy city highlights — Temple of the Tooth exterior, lakeside walk
+        - Transfer back to Colombo or your hotel
+
+- id: 5-day-highlights
+  title: 5-Day Sri Lanka Highlights
+  duration: 5 days
+  price_from: "$380"
+  icon: 🌿
+  summary: >
+    The perfect first-time Sri Lanka tour: ancient wonders, misty tea plantations,
+    scenic train routes (optional), and the golden south coast — all in one journey.
+  days:
+    - day: 1
+      title: Colombo to Cultural Triangle
+      highlights:
+        - Depart Colombo after breakfast
+        - Pinnawala Elephant Orphanage en route
+        - Afternoon: Dambulla Cave Temple
+        - Overnight near Sigiriya
+    - day: 2
+      title: Sigiriya & Polonnaruwa
+      highlights:
+        - Morning: Sigiriya Rock Fortress
+        - Afternoon: Polonnaruwa Ancient City
+        - Overnight in Habarana or Trincomalee (beach option)
+    - day: 3
+      title: Kandy & Hill Country
+      highlights:
+        - Kandy — Temple of the Tooth, Peradeniya Botanical Gardens
+        - Scenic drive into hill country
+        - Overnight Nuwara Eliya or Ella
+    - day: 4
+      title: Ella & Tea Country
+      highlights:
+        - Nine Arch Bridge, Little Adam's Peak hike
+        - Ravana Waterfall
+        - Scenic drive to the south coast
+        - Overnight Mirissa or Unawatuna
+    - day: 5
+      title: Galle Fort & Return
+      highlights:
+        - Galle Dutch Fort (UNESCO) — ramparts, lighthouse, colonial streets
+        - Unawatuna beach (time permitting)
+        - Return to Colombo
+
+- id: 7-day-explorer
+  title: 7-Day Island Explorer
+  duration: 7 days
+  price_from: "$550"
+  icon: 🌊
+  summary: >
+    See the full sweep of Sri Lanka — its ancient ruins, jungle wildlife, lush tea highlands,
+    spectacular coastline, and vibrant cultural traditions — in one comprehensive journey.
+  days:
+    - day: 1
+      title: Colombo Arrival & North
+      highlights:
+        - Airport pick-up and comfort transfer
+        - Negombo fish market & Dutch canal boat
+        - Overnight Negombo or Wilpattu area
+    - day: 2
+      title: Cultural Triangle — Sigiriya & Dambulla
+      highlights:
+        - Sigiriya Rock Fortress (UNESCO)
+        - Dambulla Cave Temple (UNESCO)
+        - Village bike ride (optional)
+    - day: 3
+      title: Polonnaruwa & Wildlife
+      highlights:
+        - Polonnaruwa Ancient City (UNESCO)
+        - Minneriya or Kaudulla elephant gathering (seasonal)
+        - Overnight Habarana
+    - day: 4
+      title: Kandy — Cultural Capital
+      highlights:
+        - Matale Spice Garden
+        - Temple of the Tooth Relic
+        - Kandy cultural dance show (evening)
+    - day: 5
+      title: Hill Country — Tea & Waterfalls
+      highlights:
+        - Nuwara Eliya — Little England of Sri Lanka
+        - Tea estate visit with tasting
+        - Horton Plains (World's End viewpoint) — optional
+        - Overnight Ella
+    - day: 6
+      title: Ella & Safari
+      highlights:
+        - Nine Arch Bridge sunrise walk
+        - Little Adam's Peak
+        - Afternoon drive to Yala region
+        - Evening wildlife watch
+    - day: 7
+      title: Yala Safari & South Coast
+      highlights:
+        - Morning Yala National Park safari — leopards, elephants, crocodiles
+        - Afternoon Mirissa beach or Galle Fort
+        - Return to Colombo (or airport drop)

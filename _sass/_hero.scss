@@ -1,0 +1,146 @@
+// ============================================================
+// HERO — Full-width home hero section
+// ============================================================
+
+.hero {
+  position: relative;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    $color-primary-dark 0%,
+    $color-primary 50%,
+    #1d8a7a 100%
+  );
+  overflow: hidden;
+
+  @media (max-width: $bp-tablet) {
+    min-height: 80vh;
+  }
+  @media (max-width: $bp-mobile) {
+    min-height: 70vh;
+    padding: 3rem 0;
+  }
+
+  // Decorative pattern overlay
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 680px;
+
+  @media (max-width: $bp-mobile) {
+    text-align: center;
+  }
+}
+
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba($color-white, 0.15);
+  border: 1px solid rgba($color-white, 0.3);
+  color: $color-white;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.35rem 0.85rem;
+  border-radius: 100px;
+  margin-bottom: 1.25rem;
+  backdrop-filter: blur(4px);
+}
+
+.hero__title {
+  font-size: clamp(2.2rem, 6vw, 3.75rem);
+  font-weight: 700;
+  color: $color-white;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+
+  span {
+    color: $color-accent;
+    display: block;
+  }
+}
+
+.hero__description {
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
+  color: rgba($color-white, 0.88);
+  margin-bottom: 2rem;
+  max-width: 540px;
+  line-height: 1.7;
+
+  @media (max-width: $bp-mobile) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.hero__actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  @media (max-width: $bp-mobile) {
+    justify-content: center;
+  }
+}
+
+.hero__stats {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 3.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba($color-white, 0.2);
+
+  @media (max-width: $bp-mobile) {
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+  }
+}
+
+.hero__stat {
+  .stat-number {
+    display: block;
+    font-family: $font-heading;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: $color-white;
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+    color: rgba($color-white, 0.72);
+    margin-top: 0.2rem;
+  }
+}
+
+// Sri Lanka map / decorative element (right side, large screens)
+.hero__illustration {
+  position: absolute;
+  right: -2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18rem;
+  opacity: 0.06;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+
+  @media (max-width: $bp-desktop) {
+    display: none;
+  }
+}

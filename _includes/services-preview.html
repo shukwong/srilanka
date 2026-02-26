@@ -1,0 +1,30 @@
+<section class="section section--light" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">What I Offer</span>
+      <h2 id="services-heading">Tour &amp; Driver Services</h2>
+      <p class="section-subtitle">
+        From quick city transfers to week-long island adventures — I've got you covered.
+      </p>
+    </div>
+
+    <div class="grid-3">
+      {% for service in site.data.services limit:6 %}
+        <article class="service-card">
+          <span class="service-icon" aria-hidden="true">{{ service.icon }}</span>
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.description }}</p>
+          <a href="{{ '/services/' | relative_url }}" class="service-link" aria-label="Learn more about {{ service.title }}">
+            Learn more →
+          </a>
+        </article>
+      {% endfor %}
+    </div>
+
+    <div class="text-center mt-2">
+      <a href="{{ '/services/' | relative_url }}" class="btn btn--outline-dark">
+        View All Services
+      </a>
+    </div>
+  </div>
+</section>

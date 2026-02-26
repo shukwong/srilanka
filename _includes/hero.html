@@ -1,0 +1,52 @@
+<section class="hero" aria-label="Hero section">
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__badge">
+        🌴 Based in Sri Lanka
+      </div>
+
+      <h1 class="hero__title">
+        Discover Sri Lanka
+        <span>Your Way</span>
+      </h1>
+
+      <p class="hero__description">
+        Private tours, airport transfers, and custom itineraries with
+        <strong>{{ site.driver.name }}</strong> — your English-speaking local driver
+        with {{ site.driver.experience_years }}+ years exploring every corner of this beautiful island.
+      </p>
+
+      <div class="hero__actions">
+        <a href="https://wa.me/{{ site.driver.whatsapp }}?text=Hello%20Mifras%2C%20I%27d%20like%20to%20book%20a%20tour"
+           class="btn btn--primary btn--lg"
+           target="_blank"
+           rel="noopener">
+          💬 Chat on WhatsApp
+        </a>
+        <a href="{{ '/itinerary/' | relative_url }}" class="btn btn--outline btn--lg">
+          View Sample Tours
+        </a>
+      </div>
+
+      <div class="hero__stats" role="list" aria-label="Key statistics">
+        <div class="hero__stat" role="listitem">
+          <span class="stat-number">{{ site.driver.experience_years }}+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="hero__stat" role="listitem">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Happy Tourists</span>
+        </div>
+        <div class="hero__stat" role="listitem">
+          <span class="stat-number">25+</span>
+          <span class="stat-label">Destinations</span>
+        </div>
+        <div class="hero__stat" role="listitem">
+          <span class="stat-number">5★</span>
+          <span class="stat-label">Rated</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero__illustration" aria-hidden="true">🌴</div>
+</section>

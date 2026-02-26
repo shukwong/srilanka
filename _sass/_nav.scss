@@ -1,0 +1,193 @@
+// ============================================================
+// NAVIGATION — Header, nav links, mobile hamburger
+// ============================================================
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: $color-white;
+  border-bottom: 1px solid $color-border;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+
+    @media (max-width: $bp-mobile) {
+      height: 60px;
+    }
+  }
+}
+
+// Logo
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+
+  .logo-icon {
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+
+    .logo-name {
+      font-family: $font-heading;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: $color-dark;
+    }
+
+    .logo-tagline {
+      font-size: 0.68rem;
+      color: $color-text-light;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+  }
+
+  &:hover .logo-name { color: $color-primary; }
+}
+
+// Desktop nav
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  a {
+    font-family: $font-heading;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: $color-text;
+    padding: 0.4rem 0.75rem;
+    border-radius: $border-radius;
+    transition: $transition;
+
+    &:hover,
+    &.active {
+      color: $color-primary;
+      background: rgba($color-primary, 0.07);
+    }
+  }
+
+  .nav-cta {
+    margin-left: 0.5rem;
+    background: $color-primary;
+    color: $color-white !important;
+    padding: 0.45rem 1rem !important;
+
+    &:hover {
+      background: $color-primary-dark !important;
+      color: $color-white !important;
+    }
+  }
+
+  @media (max-width: $bp-tablet) {
+    display: none;
+
+    &.is-open {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+      position: fixed;
+      top: 60px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $color-white;
+      padding: 1.5rem $container-pad;
+      overflow-y: auto;
+      border-top: 1px solid $color-border;
+
+      a {
+        width: 100%;
+        padding: 0.9rem 0.5rem;
+        font-size: 1rem;
+        border-bottom: 1px solid $color-border;
+        border-radius: 0;
+
+        &:last-child { border-bottom: none; }
+      }
+
+      .nav-cta {
+        margin-left: 0;
+        margin-top: 1rem;
+        background: $color-primary;
+        text-align: center;
+        border-radius: $border-radius;
+        border-bottom: none !important;
+      }
+    }
+  }
+}
+
+// Hamburger button
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: $border-radius;
+  transition: $transition;
+
+  &:hover { background: $color-light; }
+
+  span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: $color-dark;
+    border-radius: 2px;
+    transition: $transition;
+  }
+
+  &.is-open {
+    span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  }
+
+  @media (max-width: $bp-tablet) {
+    display: flex;
+  }
+}
+
+// Page header (for inner pages)
+.page-header {
+  background: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
+  color: $color-white;
+  padding: 3.5rem 0 3rem;
+  text-align: center;
+
+  @media (max-width: $bp-mobile) {
+    padding: 2.5rem 0 2rem;
+  }
+
+  h1 {
+    color: $color-white;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: rgba($color-white, 0.82);
+    font-size: 1.05rem;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,37 @@
+<header class="site-header" role="banner">
+  <div class="container">
+    <a href="{{ '/' | relative_url }}" class="site-logo" aria-label="{{ site.driver.name }} — Home">
+      <span class="logo-icon" aria-hidden="true">🚗</span>
+      <span class="logo-text">
+        <span class="logo-name">{{ site.driver.name }}</span>
+        <span class="logo-tagline">Sri Lanka Private Driver</span>
+      </span>
+    </a>
+
+    <nav class="site-nav" id="site-nav" role="navigation" aria-label="Main navigation">
+      {% for item in site.data.navigation %}
+        <a href="{{ item.url | relative_url }}"
+           {% if page.url == item.url %}class="active" aria-current="page"{% endif %}>
+          {{ item.title }}
+        </a>
+      {% endfor %}
+      <a href="https://wa.me/{{ site.driver.whatsapp }}?text=Hello%20Mifras%2C%20I%27d%20like%20to%20book%20a%20tour"
+         class="nav-cta"
+         target="_blank"
+         rel="noopener"
+         aria-label="Book via WhatsApp">
+        📱 Book Now
+      </a>
+    </nav>
+
+    <button class="nav-toggle"
+            id="nav-toggle"
+            aria-controls="site-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>

@@ -1,0 +1,39 @@
+<section class="section" aria-labelledby="testimonials-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">What Travellers Say</span>
+      <h2 id="testimonials-heading">Happy Customers</h2>
+      <p class="section-subtitle">
+        Real reviews from real travellers who explored Sri Lanka with Mifras.
+      </p>
+    </div>
+
+    <div class="grid-3">
+      {% for review in site.data.testimonials limit:3 %}
+        <article class="testimonial-card">
+          <div class="testimonial-stars" aria-label="{{ review.rating }} out of 5 stars">
+            {% assign stars = review.rating | times: 1 %}
+            {% for i in (1..stars) %}★{% endfor %}{% for i in (stars..4) %}{% if i >= stars %}☆{% endif %}{% endfor %}
+          </div>
+          <p class="testimonial-text">{{ review.text }}</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">{{ review.name | slice: 0 }}</div>
+            <div class="author-info">
+              <span class="author-name">{{ review.name }}</span>
+              <span class="author-meta">{{ review.country }} &middot; {{ review.date }}</span>
+            </div>
+          </div>
+          {% if review.tour %}
+            <div class="testimonial-tour">Tour: <span>{{ review.tour }}</span></div>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+
+    <div class="text-center mt-2">
+      <a href="{{ '/testimonials/' | relative_url }}" class="btn btn--outline-dark">
+        Read All Reviews
+      </a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,172 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="{{ '/' | relative_url }}" class="site-logo footer-logo">
+          <span class="logo-icon" aria-hidden="true">🚗</span>
+          <span class="logo-text">
+            <span class="logo-name">{{ site.driver.name }}</span>
+            <span class="logo-tagline">Sri Lanka Private Driver</span>
+          </span>
+        </a>
+        <p class="footer-tagline">
+          Explore the beauty of Sri Lanka in comfort with your trusted local driver and guide.
+        </p>
+        <div class="footer-social">
+          {% if site.social.facebook != "" and site.social.facebook %}
+            <a href="{{ site.social.facebook }}" target="_blank" rel="noopener" aria-label="Facebook">📘</a>
+          {% endif %}
+          {% if site.social.instagram != "" and site.social.instagram %}
+            <a href="{{ site.social.instagram }}" target="_blank" rel="noopener" aria-label="Instagram">📸</a>
+          {% endif %}
+          {% if site.social.tripadvisor != "" and site.social.tripadvisor %}
+            <a href="{{ site.social.tripadvisor }}" target="_blank" rel="noopener" aria-label="TripAdvisor">🦉</a>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          {% for item in site.data.navigation %}
+            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Mifras</h4>
+        <ul class="footer-contact-list">
+          <li>
+            <a href="https://wa.me/{{ site.driver.whatsapp }}" target="_blank" rel="noopener">
+              💬 WhatsApp: {{ site.driver.whatsapp_display }}
+            </a>
+          </li>
+          <li>
+            <a href="tel:{{ site.driver.phone | remove: ' ' }}">
+              📞 {{ site.driver.phone }}
+            </a>
+          </li>
+          <li>
+            <a href="mailto:{{ site.driver.email }}">
+              ✉️ {{ site.driver.email }}
+            </a>
+          </li>
+          <li>📍 {{ site.driver.location }}</li>
+        </ul>
+        <p class="footer-languages">
+          Languages: {{ site.driver.languages | join: ", " }}
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.driver.name }} — Sri Lanka Private Driver. All rights reserved.</p>
+      <p class="footer-disclaimer">{{ site.driver.license }}</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+.site-footer {
+  background: #1c1c1e;
+  color: rgba(255,255,255,0.75);
+  padding: 3.5rem 0 1.5rem;
+  margin-top: auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1.4fr;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-brand { grid-column: span 2; }
+}
+
+@media (max-width: 480px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-brand { grid-column: span 1; }
+}
+
+.footer-logo .logo-name { color: #fff; }
+.footer-logo .logo-tagline { color: rgba(255,255,255,0.5); }
+
+.footer-tagline {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  margin-top: 0.85rem;
+  margin-bottom: 1rem;
+  max-width: 300px;
+}
+
+.footer-social a {
+  font-size: 1.3rem;
+  margin-right: 0.6rem;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+  &:hover { opacity: 1; }
+}
+
+.site-footer h4 {
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  li { margin-bottom: 0.5rem; }
+  a {
+    color: rgba(255,255,255,0.65);
+    font-size: 0.88rem;
+    text-decoration: none;
+    transition: color 0.2s;
+    &:hover { color: #fff; }
+  }
+}
+
+.footer-contact-list {
+  list-style: none;
+  padding: 0;
+  li { margin-bottom: 0.55rem; }
+  a {
+    color: rgba(255,255,255,0.65);
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: color 0.2s;
+    &:hover { color: #fff; }
+  }
+  li:not(:has(a)) {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.65);
+  }
+}
+
+.footer-languages {
+  margin-top: 0.75rem;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 1.25rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.4);
+  line-height: 1.7;
+}
+
+.footer-disclaimer { margin-top: 0.2rem; }
+</style>

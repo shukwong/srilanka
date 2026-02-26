@@ -1,0 +1,92 @@
+// ============================================================
+// GALLERY — Photo grid
+// ============================================================
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  @media (max-width: $bp-tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: $bp-mobile) {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: $border-radius;
+  aspect-ratio: 4 / 3;
+  background: $color-light;
+
+  &:first-child {
+    grid-column: span 2;
+    aspect-ratio: 16 / 9;
+
+    @media (max-width: $bp-mobile) {
+      grid-column: span 2;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    display: block;
+  }
+
+  .gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba($color-dark, 0.7) 0%,
+      transparent 50%
+    );
+    opacity: 0;
+    transition: $transition;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+  }
+
+  .gallery-caption {
+    color: $color-white;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transform: translateY(8px);
+    transition: $transition;
+  }
+
+  &:hover {
+    img { transform: scale(1.05); }
+    .gallery-overlay { opacity: 1; }
+    .gallery-caption { transform: translateY(0); }
+  }
+}
+
+// Placeholder for missing images
+.gallery-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba($color-primary, 0.1), rgba($color-accent, 0.1));
+  color: $color-text-light;
+  font-size: 0.82rem;
+  text-align: center;
+  padding: 1rem;
+
+  .placeholder-icon {
+    font-size: 2rem;
+    margin-bottom: 0.4rem;
+    opacity: 0.5;
+  }
+}

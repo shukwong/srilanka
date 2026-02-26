@@ -1,0 +1,89 @@
+- id: airport-transfer
+  icon: ✈️
+  title: Airport Transfers
+  description: >
+    Reliable, punctual pick-ups and drop-offs at Bandaranaike International Airport (CMB)
+    and Mattala Rajapaksa Airport (HRI). Available 24/7 with flight tracking included.
+  price_from: "$25"
+  highlights:
+    - Flight tracking — never miss a connection
+    - Meet & greet with name board
+    - Air-conditioned vehicle
+    - Luggage assistance
+    - Fixed price, no hidden fees
+
+- id: day-trips
+  icon: 🗺️
+  title: Day Trips
+  description: >
+    Explore Sri Lanka's most iconic sites on a flexible day trip. You choose the
+    destination and pace — I'll handle the driving, directions, and insider tips.
+  price_from: "$60"
+  highlights:
+    - Sigiriya Rock Fortress
+    - Dambulla Cave Temple
+    - Polonnaruwa Ancient City
+    - Kandy & Temple of the Tooth
+    - Ella & Nine Arch Bridge
+    - Galle Fort & beaches
+
+- id: 3-day-tour
+  icon: 🏛️
+  title: 3-Day Cultural Triangle
+  description: >
+    Immerse yourself in the ancient heart of Sri Lanka — UNESCO World Heritage Sites,
+    rock fortresses, and sacred temples — in a compact three-day adventure.
+  price_from: "$220"
+  highlights:
+    - Sigiriya Rock (UNESCO)
+    - Dambulla Cave Temple (UNESCO)
+    - Polonnaruwa Ancient City (UNESCO)
+    - Minneriya National Park (optional)
+    - Comfortable accommodation recommendations
+    - All entry fees guidance included
+
+- id: 5-day-tour
+  icon: 🌿
+  title: 5-Day Highlights Tour
+  description: >
+    A perfect first-time Sri Lanka experience: ancient ruins, emerald tea plantations,
+    colonial Galle, and golden beaches all in one memorable journey.
+  price_from: "$380"
+  highlights:
+    - Cultural Triangle highlights
+    - Kandy & Temple of the Tooth
+    - Nuwara Eliya tea country
+    - Ella viewpoints & waterfalls
+    - Galle Fort (UNESCO)
+    - Unawatuna beach
+
+- id: 7-day-tour
+  icon: 🌊
+  title: 7-Day Island Explorer
+  description: >
+    The complete Sri Lanka experience. From the wild north coast to the surf
+    beaches of the south, with everything in between — truly see it all.
+  price_from: "$550"
+  highlights:
+    - Full Cultural Triangle
+    - Kandy & hill country
+    - Tea estates & waterfalls
+    - Mirissa whale watching (seasonal)
+    - Yala National Park safari
+    - Galle & south coast beaches
+    - Flexible routing
+
+- id: custom-tours
+  icon: 🎯
+  title: Custom Tours
+  description: >
+    Have a specific bucket list? Want to combine interests — wildlife, history,
+    cooking, surfing? I'll design a completely bespoke itinerary just for you.
+  price_from: "Ask me"
+  highlights:
+    - Fully flexible dates & routing
+    - Family-friendly options
+    - Honeymoon & special occasions
+    - Photography tours
+    - Adventure & off-the-beaten-path
+    - Multi-week journeys

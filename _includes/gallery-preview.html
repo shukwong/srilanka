@@ -1,0 +1,39 @@
+<section class="section section--light" aria-labelledby="gallery-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Sri Lanka's Beauty</span>
+      <h2 id="gallery-heading">Places You'll Visit</h2>
+      <p class="section-subtitle">
+        From ancient temples to misty highlands and golden beaches — Sri Lanka has it all.
+      </p>
+    </div>
+
+    <div class="gallery-grid">
+      {% for photo in site.data.gallery limit:6 %}
+        <figure class="gallery-item">
+          {% if photo.url %}
+            <img src="{{ photo.url }}"
+                 alt="{{ photo.alt }}"
+                 loading="lazy"
+                 width="800"
+                 height="600">
+          {% else %}
+            <div class="gallery-placeholder">
+              <span class="placeholder-icon">🏔️</span>
+              <span>{{ photo.alt }}</span>
+            </div>
+          {% endif %}
+          <div class="gallery-overlay">
+            <figcaption class="gallery-caption">{{ photo.caption }}</figcaption>
+          </div>
+        </figure>
+      {% endfor %}
+    </div>
+
+    <div class="text-center mt-2">
+      <a href="{{ '/gallery/' | relative_url }}" class="btn btn--outline-dark">
+        View Full Gallery
+      </a>
+    </div>
+  </div>
+</section>
