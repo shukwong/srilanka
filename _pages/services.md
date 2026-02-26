@@ -14,8 +14,7 @@ permalink: /services/
       <h2 id="services-heading">Tour &amp; Driver Services</h2>
       <p class="section-subtitle">
         All services include a clean, air-conditioned vehicle and an English-speaking
-        driver with deep local knowledge. Prices are starting guides — WhatsApp me
-        for a personalised quote.
+        driver with deep local knowledge. WhatsApp me for a personalised quote.
       </p>
     </div>
 
@@ -25,7 +24,6 @@ permalink: /services/
         <span class="service-icon-lg" aria-hidden="true">{{ service.icon }}</span>
         <div>
           <h2 id="service-{{ service.id }}">{{ service.title }}</h2>
-          <p class="service-price">From <strong>{{ service.price_from }}</strong></p>
         </div>
       </div>
       <p class="service-detail__description">{{ service.description }}</p>
@@ -119,17 +117,6 @@ permalink: /services/
   font-size: 2.5rem;
   line-height: 1;
   flex-shrink: 0;
-}
-
-.service-price {
-  color: #777;
-  font-size: 0.9rem;
-  margin-top: 0.25rem;
-}
-
-.service-price strong {
-  color: #1a6b7a;
-  font-size: 1.05rem;
 }
 
 .service-detail__description {

@@ -4,7 +4,6 @@
   description: >
     Reliable, punctual pick-ups and drop-offs at Bandaranaike International Airport (CMB)
     and Mattala Rajapaksa Airport (HRI). Available 24/7 with flight tracking included.
-  price_from: "$25"
   highlights:
     - Flight tracking — never miss a connection
     - Meet & greet with name board
@@ -18,7 +17,6 @@
   description: >
     Explore Sri Lanka's most iconic sites on a flexible day trip. You choose the
     destination and pace — I'll handle the driving, directions, and insider tips.
-  price_from: "$60"
   highlights:
     - Sigiriya Rock Fortress
     - Dambulla Cave Temple
@@ -33,7 +31,6 @@
   description: >
     Immerse yourself in the ancient heart of Sri Lanka — UNESCO World Heritage Sites,
     rock fortresses, and sacred temples — in a compact three-day adventure.
-  price_from: "$220"
   highlights:
     - Sigiriya Rock (UNESCO)
     - Dambulla Cave Temple (UNESCO)
@@ -48,7 +45,6 @@
   description: >
     A perfect first-time Sri Lanka experience: ancient ruins, emerald tea plantations,
     colonial Galle, and golden beaches all in one memorable journey.
-  price_from: "$380"
   highlights:
     - Cultural Triangle highlights
     - Kandy & Temple of the Tooth
@@ -63,7 +59,6 @@
   description: >
     The complete Sri Lanka experience. From the wild north coast to the surf
     beaches of the south, with everything in between — truly see it all.
-  price_from: "$550"
   highlights:
     - Full Cultural Triangle
     - Kandy & hill country
@@ -79,7 +74,6 @@
   description: >
     Have a specific bucket list? Want to combine interests — wildlife, history,
     cooking, surfing? I'll design a completely bespoke itinerary just for you.
-  price_from: "Ask me"
   highlights:
     - Fully flexible dates & routing
     - Family-friendly options
