@@ -11,10 +11,7 @@ permalink: /about/
   <div class="container">
     <div class="about-intro">
       <div class="about-intro__image">
-        <div class="photo-placeholder" aria-label="Photo of Mifras, Sri Lanka private driver">
-          <span style="font-size: 5rem;" aria-hidden="true">🚗</span>
-          <p style="margin-top: 1rem; color: var(--color-text-light, #777);">Mifras — Your Driver</p>
-        </div>
+        <img src="{{ '/assets/images/mifras.jpg' | relative_url }}" alt="Mifras, Sri Lanka private driver and guide" style="width: 100%; border-radius: 8px;">
       </div>
       <div class="about-intro__content">
         <span class="section-label">Your Driver &amp; Guide</span>
