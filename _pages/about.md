@@ -11,7 +11,7 @@ permalink: /about/
   <div class="container">
     <div class="about-intro">
       <div class="about-intro__image">
-        <img src="{{ '/assets/images/mifras.jpg' | relative_url }}" alt="Mifras, Sri Lanka private driver and guide" style="width: 100%; border-radius: 8px;">
+        <img src="{{ '/assets/images/mifras_with_van.jpg' | relative_url }}" alt="Mifras, Sri Lanka private driver and guide" style="width: 100%; border-radius: 8px;">
       </div>
       <div class="about-intro__content">
         <span class="section-label">Your Driver &amp; Guide</span>
