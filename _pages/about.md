@@ -29,8 +29,8 @@ permalink: /about/
           viewpoints, and the warmth of the people who make this country so special.
         </p>
         <p>
-          I speak fluent English (as well as Sinhala and Tamil), hold a government
-          tourist driver licence, and operate a clean, air-conditioned vehicle at all times.
+          I speak fluent English (as well as Sinhala and Tamil) and operate a clean,
+          air-conditioned vehicle at all times.
           My goal is simple: to give you the holiday you've dreamed of, with the comfort
           and reliability of having a trusted local by your side.
         </p>
