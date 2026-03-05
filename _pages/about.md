@@ -60,7 +60,7 @@ permalink: /about/
       <div class="feature-card">
         <span class="feature-icon" aria-hidden="true">🚐</span>
         <h3>Premium Vehicle</h3>
-        <p>{{ site.driver.vehicle }} — always clean, serviced, insured, and equipped with chargers and first aid.</p>
+        <p>{{ site.driver.vehicle }} — always clean, serviced, insured, and equipped with chargers.</p>
       </div>
       <div class="feature-card">
         <span class="feature-icon" aria-hidden="true">⭐</span>

@@ -15,7 +15,7 @@ driver:
   phone: "+94 76 063 6310"
   whatsapp: "94760636310"        # Digits only, no + or spaces, for wa.me links
   whatsapp_display: "+94 76 063 6310"
-  vehicle: "Air-conditioned Toyota KDH Van / Sedan Car"
+  vehicle: "Air-conditioned Toyota KDH Van"
   experience_years: 10
 
 # ──────────────────────────────────────────────────────────────
