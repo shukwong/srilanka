@@ -13,39 +13,8 @@ permalink: /testimonials/
       <span class="section-label">Real Reviews</span>
       <h2 id="reviews-heading">What Travellers Say</h2>
       <p class="section-subtitle">
-        Over 500 satisfied tourists from around the world. Here are some of their stories.
+        Satisfied tourists from around the world.
       </p>
-    </div>
-
-    <!-- Rating summary -->
-    <div class="rating-summary" aria-label="Overall rating summary">
-      <div class="rating-score">
-        <span class="score-number">5.0</span>
-        <div class="score-stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <span class="score-label">Overall Rating</span>
-      </div>
-      <div class="rating-breakdown">
-        <div class="rating-row">
-          <span>Service</span>
-          <div class="rating-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><div style="width:100%"></div></div>
-          <span>5.0</span>
-        </div>
-        <div class="rating-row">
-          <span>Value</span>
-          <div class="rating-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><div style="width:100%"></div></div>
-          <span>5.0</span>
-        </div>
-        <div class="rating-row">
-          <span>Communication</span>
-          <div class="rating-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><div style="width:100%"></div></div>
-          <span>5.0</span>
-        </div>
-        <div class="rating-row">
-          <span>Reliability</span>
-          <div class="rating-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><div style="width:100%"></div></div>
-          <span>5.0</span>
-        </div>
-      </div>
     </div>
 
     <div class="grid-3">
@@ -126,74 +95,6 @@ permalink: /testimonials/
 </section>
 
 <style>
-.rating-summary {
-  display: grid;
-  gap: 2rem;
-  align-items: center;
-  background: #f8f7f4;
-  border-radius: 16px;
-  padding: 2rem;
-  margin-bottom: 3rem;
-}
-
-@media (min-width: 640px) {
-  .rating-summary {
-    grid-template-columns: auto 1fr;
-  }
-}
-
-.rating-score {
-  text-align: center;
-}
-
-.score-number {
-  display: block;
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: #1a6b7a;
-  line-height: 1;
-}
-
-.score-stars {
-  color: #f4a621;
-  font-size: 1.5rem;
-  margin: 0.25rem 0;
-}
-
-.score-label {
-  font-size: 0.82rem;
-  color: #777;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
-.rating-breakdown {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.rating-row {
-  display: grid;
-  grid-template-columns: 120px 1fr 36px;
-  align-items: center;
-  gap: 0.75rem;
-  font-size: 0.9rem;
-}
-
-.rating-bar {
-  height: 8px;
-  background: #e8e4de;
-  border-radius: 999px;
-  overflow: hidden;
-}
-
-.rating-bar div {
-  height: 100%;
-  background: #f4a621;
-  border-radius: 999px;
-}
-
 .testimonial-source {
   display: flex;
   align-items: center;
