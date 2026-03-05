@@ -11,7 +11,7 @@ permalink: /about/
   <div class="container">
     <div class="about-intro">
       <div class="about-intro__image">
-        <img src="{{ '/assets/images/mifras.jpg' | relative_url }}" alt="Mifras, Sri Lanka private driver and guide" style="width: 100%; border-radius: 8px;">
+        <img src="{{ '/assets/images/mifras_with_van.jpg' | relative_url }}" alt="Mifras, Sri Lanka private driver and guide" style="width: 100%; border-radius: 8px;">
       </div>
       <div class="about-intro__content">
         <span class="section-label">Your Driver &amp; Guide</span>
@@ -29,8 +29,8 @@ permalink: /about/
           viewpoints, and the warmth of the people who make this country so special.
         </p>
         <p>
-          I speak fluent English (as well as Sinhala and Tamil), hold a government
-          tourist driver licence, and operate a clean, air-conditioned vehicle at all times.
+          I speak fluent English (as well as Sinhala and Tamil) and operate a clean,
+          air-conditioned vehicle at all times.
           My goal is simple: to give you the holiday you've dreamed of, with the comfort
           and reliability of having a trusted local by your side.
         </p>
@@ -60,12 +60,12 @@ permalink: /about/
       <div class="feature-card">
         <span class="feature-icon" aria-hidden="true">🚐</span>
         <h3>Premium Vehicle</h3>
-        <p>{{ site.driver.vehicle }} — always clean, serviced, insured, and equipped with chargers and first aid.</p>
+        <p>{{ site.driver.vehicle }} — always clean, serviced, insured, and equipped with chargers.</p>
       </div>
       <div class="feature-card">
         <span class="feature-icon" aria-hidden="true">⭐</span>
-        <h3>500+ Happy Tourists</h3>
-        <p>Hundreds of 5-star reviews from travellers across Europe, USA, Australia, Asia, and beyond.</p>
+        <h3>Many Happy Tourists</h3>
+        <p>Many 5-star reviews from travellers across Europe, USA, Australia, Asia, and beyond.</p>
       </div>
     </div>
   </div>
@@ -75,17 +75,17 @@ permalink: /about/
   <div class="container" style="max-width: 720px;">
     <span class="section-label">My Promise to You</span>
     <h2 id="values-heading" style="margin-bottom: 1.5rem;">What You Can Always Expect</h2>
-
-- **Punctuality** — I'll be waiting when you arrive, no matter the hour
-- **Transparency** — No hidden fees, no commission arrangements with shops or restaurants
-- **Flexibility** — Your holiday, your pace; itineraries can change on the fly
-- **Safety** — Careful, experienced driving on Sri Lanka's varied road conditions
-- **Local knowledge** — The best local food spots, hidden viewpoints, and cultural insights
-- **24/7 availability during your trip** — I'm always reachable if you need anything
-
-> "My goal is not just to drive you — it's to make sure Sri Lanka exceeds every expectation you had when you booked your flight."
-> — Mifras
-
+    <ul>
+      <li><strong>Punctuality</strong> — I'll be waiting when you arrive, no matter the hour</li>
+      <li><strong>Transparency</strong> — No hidden fees, no commission arrangements with shops or restaurants</li>
+      <li><strong>Flexibility</strong> — Your holiday, your pace; itineraries can change on the fly</li>
+      <li><strong>Safety</strong> — Careful, experienced driving on Sri Lanka's varied road conditions</li>
+      <li><strong>Local knowledge</strong> — The best local food spots, hidden viewpoints, and cultural insights</li>
+      <li><strong>24/7 availability during your trip</strong> — I'm always reachable if you need anything</li>
+    </ul>
+    <blockquote>
+      <p>"My goal is not just to drive you — it's to make sure Sri Lanka exceeds every expectation you had when you booked your flight."<br>— Mifras</p>
+    </blockquote>
   </div>
 </section>
 
