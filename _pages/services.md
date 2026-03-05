@@ -88,9 +88,6 @@ permalink: /services/
            rel="noopener">
           💬 Get a Quote on WhatsApp
         </a>
-        <a href="{{ '/contact/' | relative_url }}" class="btn btn--outline-white btn--lg">
-          Use the Contact Form
-        </a>
       </div>
     </div>
   </div>

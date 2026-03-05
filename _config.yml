@@ -15,12 +15,6 @@ driver:
   phone: "+94 76 063 6310"
   whatsapp: "94760636310"        # Digits only, no + or spaces, for wa.me links
   whatsapp_display: "+94 76 063 6310"
-  email: "mifras@example.com"    # Replace with real email
-  location: "Colombo, Sri Lanka"
-  languages:
-    - English
-    - Sinhala
-    - Tamil
   vehicle: "Air-conditioned Toyota KDH Van / Sedan Car"
   experience_years: 10
 
