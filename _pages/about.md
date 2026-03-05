@@ -64,8 +64,8 @@ permalink: /about/
       </div>
       <div class="feature-card">
         <span class="feature-icon" aria-hidden="true">⭐</span>
-        <h3>500+ Happy Tourists</h3>
-        <p>Hundreds of 5-star reviews from travellers across Europe, USA, Australia, Asia, and beyond.</p>
+        <h3>Many Happy Tourists</h3>
+        <p>Many 5-star reviews from travellers across Europe, USA, Australia, Asia, and beyond.</p>
       </div>
     </div>
   </div>
@@ -75,17 +75,17 @@ permalink: /about/
   <div class="container" style="max-width: 720px;">
     <span class="section-label">My Promise to You</span>
     <h2 id="values-heading" style="margin-bottom: 1.5rem;">What You Can Always Expect</h2>
-
-- **Punctuality** — I'll be waiting when you arrive, no matter the hour
-- **Transparency** — No hidden fees, no commission arrangements with shops or restaurants
-- **Flexibility** — Your holiday, your pace; itineraries can change on the fly
-- **Safety** — Careful, experienced driving on Sri Lanka's varied road conditions
-- **Local knowledge** — The best local food spots, hidden viewpoints, and cultural insights
-- **24/7 availability during your trip** — I'm always reachable if you need anything
-
-> "My goal is not just to drive you — it's to make sure Sri Lanka exceeds every expectation you had when you booked your flight."
-> — Mifras
-
+    <ul>
+      <li><strong>Punctuality</strong> — I'll be waiting when you arrive, no matter the hour</li>
+      <li><strong>Transparency</strong> — No hidden fees, no commission arrangements with shops or restaurants</li>
+      <li><strong>Flexibility</strong> — Your holiday, your pace; itineraries can change on the fly</li>
+      <li><strong>Safety</strong> — Careful, experienced driving on Sri Lanka's varied road conditions</li>
+      <li><strong>Local knowledge</strong> — The best local food spots, hidden viewpoints, and cultural insights</li>
+      <li><strong>24/7 availability during your trip</strong> — I'm always reachable if you need anything</li>
+    </ul>
+    <blockquote>
+      <p>"My goal is not just to drive you — it's to make sure Sri Lanka exceeds every expectation you had when you booked your flight."<br>— Mifras</p>
+    </blockquote>
   </div>
 </section>
 
