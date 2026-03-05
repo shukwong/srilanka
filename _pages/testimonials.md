@@ -67,13 +67,17 @@ permalink: /testimonials/
         <div class="testimonial-tour">Tour: <span>{{ review.tour }}</span></div>
         {% endif %}
         {% if review.source == "tripadvisor" %}
-        <div class="testimonial-source" aria-label="Review from TripAdvisor">
+        <div class="testimonial-source">
+          {% if review.url %}
+          <a href="{{ review.url }}" target="_blank" rel="noopener" aria-label="View this review on TripAdvisor">
+          {% endif %}
           <svg width="16" height="16" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <circle cx="16" cy="16" r="16" fill="#34E0A1"/>
             <circle cx="16" cy="16" r="8" fill="white"/>
             <circle cx="16" cy="16" r="4" fill="#34E0A1"/>
           </svg>
-          <span>TripAdvisor</span>
+          <span>View on TripAdvisor</span>
+          {% if review.url %}</a>{% endif %}
         </div>
         {% endif %}
       </article>
