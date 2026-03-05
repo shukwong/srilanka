@@ -60,11 +60,21 @@ permalink: /testimonials/
           <div class="author-avatar" aria-hidden="true">{{ review.name | slice: 0 }}</div>
           <div class="author-info">
             <span class="author-name">{{ review.name }}</span>
-            <span class="author-meta">{{ review.country }} · {{ review.date }}</span>
+            <span class="author-meta">{% if review.country %}{{ review.country }} · {% endif %}{{ review.date }}</span>
           </div>
         </div>
         {% if review.tour %}
         <div class="testimonial-tour">Tour: <span>{{ review.tour }}</span></div>
+        {% endif %}
+        {% if review.source == "tripadvisor" %}
+        <div class="testimonial-source" aria-label="Review from TripAdvisor">
+          <svg width="16" height="16" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="16" cy="16" r="16" fill="#34E0A1"/>
+            <circle cx="16" cy="16" r="8" fill="white"/>
+            <circle cx="16" cy="16" r="4" fill="#34E0A1"/>
+          </svg>
+          <span>TripAdvisor</span>
+        </div>
         {% endif %}
       </article>
       {% endfor %}
@@ -178,5 +188,15 @@ permalink: /testimonials/
   height: 100%;
   background: #f4a621;
   border-radius: 999px;
+}
+
+.testimonial-source {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+  font-size: 0.78rem;
+  color: #777;
+  font-weight: 500;
 }
 </style>

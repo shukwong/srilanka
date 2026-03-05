@@ -1,3 +1,33 @@
+- name: Qiao
+  country: Hong Kong, China
+  date: February 2026
+  rating: 5
+  source: tripadvisor
+  text: >
+    My daughter and I had an absolutely incredible experience with our driver, Mifras,
+    during our recent trip to Sri Lanka. If you are looking for someone who is much more
+    than just a driver, but a true guide and companion, look no further. Ultimate
+    Professionalism: Mifras was incredibly responsible and punctual, consistently arriving
+    early for every pickup. We were also so impressed that he took the time to clean the
+    car every single day — it was always spotless and comfortable. Going the Extra Mile:
+    Mifras didn't just drop us off at the sights, he walked with us to ensure we saw the
+    best spots. His 'show and tell' sessions at the local markets were a highlight. Kind
+    & Attentive: What truly touched our hearts was the way he took care of me, a nearly
+    80 years old woman. He was exceptionally patient and attentive to my needs, making
+    sure I was safe and comfortable throughout the journey. Wonderful Energy: He is a
+    genuinely friendly person with an 'always happy' attitude. His positive energy and
+    deep knowledge of the country made every long drive a pleasure.
+
+- name: Laura D
+  date: January 2026
+  rating: 5
+  source: tripadvisor
+  text: >
+    We traveled through Sri Lanka for two weeks with my husband and our three-year-old
+    daughter, and Mifras was our driver. His driving was exemplary, and we always felt
+    safe throughout the journey. He was very discreet yet eager to show us the beauty
+    of his country. We truly appreciated his professionalism and kindness. Highly recommend!
+
 - name: Sarah & James Thompson
   country: United Kingdom
   date: December 2024
