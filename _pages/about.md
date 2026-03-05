@@ -53,11 +53,6 @@ permalink: /about/
     </div>
     <div class="grid-3">
       <div class="feature-card">
-        <span class="feature-icon" aria-hidden="true">📜</span>
-        <h3>{{ site.driver.license }}</h3>
-        <p>Fully licensed by the Sri Lanka Tourism Development Authority to operate tourist transport services island-wide.</p>
-      </div>
-      <div class="feature-card">
         <span class="feature-icon" aria-hidden="true">🗓️</span>
         <h3>{{ site.driver.experience_years }}+ Years Experience</h3>
         <p>Over a decade of professional experience driving tourists safely across every region of Sri Lanka.</p>
