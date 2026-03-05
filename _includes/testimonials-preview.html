@@ -20,7 +20,7 @@
             <div class="author-avatar" aria-hidden="true">{{ review.name | slice: 0 }}</div>
             <div class="author-info">
               <span class="author-name">{{ review.name }}</span>
-              <span class="author-meta">{{ review.country }} &middot; {{ review.date }}</span>
+              <span class="author-meta">{% if review.country %}{{ review.country }} &middot; {% endif %}{{ review.date }}</span>
             </div>
           </div>
           {% if review.tour %}
