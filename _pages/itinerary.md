@@ -79,9 +79,6 @@ permalink: /itinerary/
          rel="noopener">
         💬 Plan a Custom Tour
       </a>
-      <a href="{{ '/contact/' | relative_url }}" class="btn btn--outline btn--lg">
-        Send Your Requirements
-      </a>
     </div>
   </div>
 </section>

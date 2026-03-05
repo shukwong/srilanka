@@ -47,23 +47,12 @@
               📞 {{ site.driver.phone }}
             </a>
           </li>
-          <li>
-            <a href="mailto:{{ site.driver.email }}">
-              ✉️ {{ site.driver.email }}
-            </a>
-          </li>
-          <li>📍 {{ site.driver.location }}</li>
         </ul>
-        <p class="footer-languages">
-          Languages: {{ site.driver.languages | join: ", " }}
-        </p>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.driver.name }} — Sri Lanka Private Driver. All rights reserved.</p>
-      <p class="footer-disclaimer">{{ site.driver.license }}</p>
-    </div>
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.driver.name }} — Sri Lanka Private Driver. All rights reserved.</p>    </div>
   </div>
 </footer>
 

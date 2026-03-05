@@ -53,19 +53,9 @@ permalink: /about/
     </div>
     <div class="grid-3">
       <div class="feature-card">
-        <span class="feature-icon" aria-hidden="true">📜</span>
-        <h3>{{ site.driver.license }}</h3>
-        <p>Fully licensed by the Sri Lanka Tourism Development Authority to operate tourist transport services island-wide.</p>
-      </div>
-      <div class="feature-card">
         <span class="feature-icon" aria-hidden="true">🗓️</span>
         <h3>{{ site.driver.experience_years }}+ Years Experience</h3>
         <p>Over a decade of professional experience driving tourists safely across every region of Sri Lanka.</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-icon" aria-hidden="true">🌐</span>
-        <h3>{{ site.driver.languages | join: ", " }}</h3>
-        <p>Fluent communication in English ensures you never feel lost or misunderstood throughout your journey.</p>
       </div>
       <div class="feature-card">
         <span class="feature-icon" aria-hidden="true">🚐</span>
@@ -76,11 +66,6 @@ permalink: /about/
         <span class="feature-icon" aria-hidden="true">⭐</span>
         <h3>500+ Happy Tourists</h3>
         <p>Hundreds of 5-star reviews from travellers across Europe, USA, Australia, Asia, and beyond.</p>
-      </div>
-      <div class="feature-card">
-        <span class="feature-icon" aria-hidden="true">📍</span>
-        <h3>Based in {{ site.driver.location }}</h3>
-        <p>Centrally located for easy airport transfers and day trips across the entire island.</p>
       </div>
     </div>
   </div>
@@ -115,9 +100,6 @@ permalink: /about/
            target="_blank"
            rel="noopener">
           💬 WhatsApp Mifras
-        </a>
-        <a href="{{ '/contact/' | relative_url }}" class="btn btn--outline-white btn--lg">
-          Send a Message
         </a>
       </div>
     </div>

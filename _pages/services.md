@@ -45,37 +45,6 @@ permalink: /services/
   </div>
 </section>
 
-<section class="section section--light" aria-labelledby="whats-included-heading">
-  <div class="container" style="max-width: 800px; margin: 0 auto;">
-    <span class="section-label">All Services Include</span>
-    <h2 id="whats-included-heading" style="margin-bottom: 1.5rem;">What's Always Included</h2>
-    <div class="grid-2">
-      <div>
-        <h3 style="margin-bottom: 0.75rem;">✅ Always Included</h3>
-        <ul>
-          <li>Air-conditioned vehicle</li>
-          <li>English-speaking driver/guide</li>
-          <li>Fuel costs</li>
-          <li>Parking fees</li>
-          <li>Driver's meals and accommodation (on multi-day tours)</li>
-          <li>24/7 WhatsApp support during your trip</li>
-          <li>Flight tracking for airport transfers</li>
-        </ul>
-      </div>
-      <div>
-        <h3 style="margin-bottom: 0.75rem;">❌ Not Included</h3>
-        <ul>
-          <li>National park / site entry fees (paid at gate)</li>
-          <li>Your meals and accommodation</li>
-          <li>Jeep fees for national park safaris</li>
-          <li>Optional activity costs (boat rides, cooking classes, etc.)</li>
-          <li>Tipping (appreciated but never obligatory)</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="cta-banner" aria-label="Book now call to action">
   <div class="container">
     <div class="cta-banner__content">
@@ -87,9 +56,6 @@ permalink: /services/
            target="_blank"
            rel="noopener">
           💬 Get a Quote on WhatsApp
-        </a>
-        <a href="{{ '/contact/' | relative_url }}" class="btn btn--outline-white btn--lg">
-          Use the Contact Form
         </a>
       </div>
     </div>

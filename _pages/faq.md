@@ -51,9 +51,6 @@ permalink: /faq/
            rel="noopener">
           💬 Ask on WhatsApp
         </a>
-        <a href="{{ '/contact/' | relative_url }}" class="btn btn--outline">
-          Send a Message
-        </a>
       </div>
     </div>
   </div>
