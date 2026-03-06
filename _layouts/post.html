@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+  <header class="post-hero">
+    <div class="container">
+      <div class="post-hero__inner">
+        <a href="{{ '/blog/' | relative_url }}" class="post-back-link">← Back to Blog</a>
+        <span class="section-label">{{ page.category | default: "Travel Tips" }}</span>
+        <h1 class="post-title" itemprop="headline">{{ page.title }}</h1>
+        <div class="post-meta">
+          <span class="post-meta__date">
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+              {{ page.date | date: "%B %-d, %Y" }}
+            </time>
+          </span>
+          {% if page.read_time %}
+            <span class="post-meta__sep" aria-hidden="true">·</span>
+            <span class="post-meta__read-time">{{ page.read_time }} min read</span>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="post-body">
+    <div class="container">
+      <div class="post-content" itemprop="articleBody">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+
+</article>
+
+<section class="cta-banner" aria-label="Contact call to action">
+  <div class="container">
+    <div class="cta-banner__content">
+      <h2>Ready to Explore Sri Lanka?</h2>
+      <p>Message Mifras on WhatsApp with your travel dates — he'll respond quickly with a personalised plan.</p>
+      <div class="cta-banner__actions">
+        <a href="https://wa.me/{{ site.driver.whatsapp }}?text=Hello%20Mifras%2C%20I%27d%20like%20to%20plan%20a%20trip%20to%20Sri%20Lanka"
+           class="btn btn--white btn--lg"
+           target="_blank"
+           rel="noopener">
+          💬 WhatsApp Mifras
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,252 @@
+// ============================================================
+// BLOG — Index grid and single post styles
+// ============================================================
+
+// ── Blog index grid ─────────────────────────────────────────
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2.5rem;
+
+  @media (max-width: $bp-desktop) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $bp-mobile) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.blog-card {
+  background: $color-white;
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
+  overflow: hidden;
+  box-shadow: $box-shadow;
+  transition: $transition;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    box-shadow: $box-shadow-hover;
+    transform: translateY(-3px);
+  }
+}
+
+.blog-card__body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.blog-card__category {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $color-primary;
+  background: rgba($color-primary, 0.08);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
+.blog-card__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+
+  a {
+    color: $color-dark;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.blog-card__excerpt {
+  font-size: 0.9rem;
+  color: $color-text;
+  line-height: 1.65;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.blog-card__footer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.blog-card__date {
+  font-size: 0.8rem;
+  color: $color-text-light;
+}
+
+.blog-card__read-time {
+  font-size: 0.8rem;
+  color: $color-text-light;
+
+  &::before {
+    content: "·";
+    margin-right: 0.75rem;
+  }
+}
+
+.blog-card__link {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.blog-empty {
+  text-align: center;
+  color: $color-text-light;
+  font-style: italic;
+  padding: 3rem 0;
+}
+
+// ── Single post ──────────────────────────────────────────────
+
+.post-hero {
+  background: $color-primary;
+  color: $color-white;
+  padding: 3.5rem 0 2.5rem;
+
+  @media (max-width: $bp-tablet) {
+    padding: 2.5rem 0 2rem;
+  }
+}
+
+.post-hero__inner {
+  max-width: 720px;
+}
+
+.post-back-link {
+  display: inline-block;
+  color: rgba($color-white, 0.75);
+  font-size: 0.88rem;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $color-white;
+  }
+}
+
+.post-hero .section-label {
+  color: $color-accent;
+  border-color: rgba($color-accent, 0.4);
+}
+
+.post-title {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: $color-white;
+  margin: 0.5rem 0 1rem;
+}
+
+.post-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+  color: rgba($color-white, 0.7);
+}
+
+.post-meta__sep {
+  opacity: 0.5;
+}
+
+// ── Post body / prose ────────────────────────────────────────
+
+.post-body {
+  padding: 3rem 0 4rem;
+}
+
+.post-content {
+  max-width: 720px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: $color-text;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $color-dark;
+    margin: 2.5rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid $color-border;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $color-dark;
+    margin: 2rem 0 0.75rem;
+  }
+
+  p {
+    margin-bottom: 1.25rem;
+  }
+
+  ul, ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.25rem;
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  strong {
+    color: $color-dark;
+    font-weight: 600;
+  }
+
+  blockquote {
+    border-left: 4px solid $color-accent;
+    margin: 1.75rem 0;
+    padding: 1rem 1.5rem;
+    background: $color-light;
+    border-radius: 0 $border-radius $border-radius 0;
+
+    p {
+      margin: 0;
+      font-style: italic;
+      color: $color-text;
+    }
+  }
+
+  a {
+    color: $color-primary;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+    &:hover {
+      color: $color-primary-dark;
+    }
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid $color-border;
+    margin: 2.5rem 0;
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: $border-radius;
+    margin: 1.5rem 0;
+  }
+}
