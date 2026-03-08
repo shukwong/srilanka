@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Frequently Asked Questions
+title: FAQ — Booking a Private Driver in Sri Lanka
 description: >
-  Answers to common questions about booking my driving service in Sri Lanka — from
-  pricing and vehicle types to booking process and travel tips.
+  Answers to common questions about booking a private driver in Sri Lanka — pricing,
+  vehicle types, safety, itinerary flexibility, best time to visit, and travel tips.
 permalink: /faq/
 ---
 
@@ -134,3 +134,5 @@ permalink: /faq/
   margin: 0 auto;
 }
 </style>
+
+{% include schema-faq.html %}
