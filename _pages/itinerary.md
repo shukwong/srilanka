@@ -92,6 +92,13 @@ permalink: /itinerary/
   padding: 2.5rem;
   margin-bottom: 3rem;
   box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  overflow: visible;
+  transform: none;
+}
+
+.itinerary-card:hover {
+  transform: none;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
 }
 
 .itinerary-card__header {
