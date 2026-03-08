@@ -30,3 +30,22 @@
     safe throughout the journey. He was very discreet yet eager to show us the beauty
     of his country. We truly appreciated his professionalism and kindness. Highly recommend!
 
+- name: 1toptravelagent
+  date: February 2026
+  rating: 5
+  source: tripadvisor
+  travel_type: Traveled with friends
+  screenshot: /assets/images/reviews/review-tripadvisor-1toptravelagent.jpg
+
+- name: Zia W
+  date: February 2026
+  rating: 5
+  source: tripadvisor
+  travel_type: Family
+  screenshot: /assets/images/reviews/review-tripadvisor-zia-w.jpg
+
+- name: Majid Ali
+  rating: 5
+  source: google
+  screenshot: /assets/images/reviews/review-google-majid-ali.jpg
+
