@@ -61,7 +61,7 @@ permalink: /about/
       <div class="feature-card">
         <span class="feature-icon" aria-hidden="true">🚐</span>
         <h3>Premium Vehicle</h3>
-        <p>{{ site.driver.vehicle }} — always clean, serviced, insured, and equipped with chargers.</p>
+        <p>{{ site.driver.vehicle }} — always clean, serviced, and insured.</p>
       </div>
       <div class="feature-card">
         <span class="feature-icon" aria-hidden="true">⭐</span>
@@ -69,6 +69,30 @@ permalink: /about/
         <p>Many 5-star reviews from travellers across Europe, USA, Australia, Asia, and beyond.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="section section--light" aria-labelledby="food-heading">
+  <div class="container" style="max-width: 720px;">
+    <span class="section-label">A Taste of Sri Lanka</span>
+    <h2 id="food-heading" style="margin-bottom: 1rem;">Local Food, Spices & Markets</h2>
+    <p>
+      One of my greatest passions — beyond the roads and ruins — is Sri Lanka's extraordinary food culture.
+      Growing up surrounded by the island's rich culinary traditions, I've developed a deep knowledge of
+      local ingredients, traditional grains, and the spices that give Sri Lankan cooking its unmistakable character.
+    </p>
+    <p>
+      Whether you want to explore a bustling spice market in Kandy, pick up fresh cinnamon and cardamom direct
+      from local vendors, or simply find the best family-run rice-and-curry spot that tourists never discover,
+      I'm your guide. I can identify ingredients, explain their uses in traditional recipes, and help
+      you shop authentically — without the tourist markup.
+    </p>
+    <ul>
+      <li><strong>Spice markets</strong> — cinnamon, cardamom, cloves, pepper, turmeric and more</li>
+      <li><strong>Local grains</strong> — red rice, kurakkan (finger millet), and traditional staples</li>
+      <li><strong>Fresh produce</strong> — seasonal fruits, vegetables, and herbs used in everyday Sri Lankan cooking</li>
+      <li><strong>Street food guidance</strong> — the best hoppers, kottu, and short eats from trusted local stalls</li>
+    </ul>
   </div>
 </section>
 
