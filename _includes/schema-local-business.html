@@ -1,0 +1,46 @@
+{% assign review_count = 0 %}
+{% assign rating_sum = 0 %}
+{% for review in site.data.testimonials %}
+  {% assign review_count = review_count | plus: 1 %}
+  {% assign rating_sum = rating_sum | plus: review.rating %}
+{% endfor %}
+{% assign avg_rating = rating_sum | times: 1.0 | divided_by: review_count %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "{{ site.title }}",
+  "description": "{{ site.description | strip_newlines | strip }}",
+  "url": "{{ site.url }}{{ site.baseurl }}/",
+  "telephone": "{{ site.driver.phone }}",
+  "image": "{{ site.url }}{{ site.baseurl }}/assets/images/mifras_with_van.jpg",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "LK",
+    "addressRegion": "Sri Lanka"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 7.8731,
+    "longitude": 80.7718
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Sri Lanka"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{{ avg_rating }}",
+    "reviewCount": "{{ review_count }}",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  }
+}
+</script>

@@ -1,0 +1,40 @@
+{% assign text_reviews = "" %}
+{% for review in site.data.testimonials %}
+  {% if review.text %}
+    {% if text_reviews == "" %}
+      {% assign text_reviews = review.name %}
+    {% else %}
+      {% assign text_reviews = text_reviews | append: "," | append: review.name %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}{{ site.baseurl }}/",
+  "review": [
+    {% assign first = true %}
+    {% for review in site.data.testimonials %}
+    {% if review.text %}
+    {% unless first %},{% endunless %}
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": {{ review.name | jsonify }}
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "{{ review.rating }}",
+        "bestRating": "5"
+      },
+      "reviewBody": {{ review.text | strip_newlines | strip | jsonify }}
+    }
+    {% assign first = false %}
+    {% endif %}
+    {% endfor %}
+  ]
+}
+</script>

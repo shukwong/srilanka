@@ -1,9 +1,10 @@
 ---
 layout: page
-title: About Mifras
+title: About Mifras — Sri Lanka Private Driver & Local Guide
 description: >
-  Meet Mifras — your trusted Sri Lanka private driver and guide with 10+ years
-  of experience showing travellers the very best of this beautiful island.
+  Meet Mifras — your trusted English-speaking Sri Lanka private driver and guide
+  with 10+ years of experience. Licensed, insured, and 5-star rated by travellers
+  from around the world.
 permalink: /about/
 ---
 
