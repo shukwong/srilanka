@@ -72,6 +72,30 @@ permalink: /about/
   </div>
 </section>
 
+<section class="section section--light" aria-labelledby="food-heading">
+  <div class="container" style="max-width: 720px;">
+    <span class="section-label">A Taste of Sri Lanka</span>
+    <h2 id="food-heading" style="margin-bottom: 1rem;">Local Food, Spices & Markets</h2>
+    <p>
+      One of Mifras's greatest passions — beyond the roads and ruins — is Sri Lanka's extraordinary food culture.
+      Growing up surrounded by the island's rich culinary traditions, he has developed a deep knowledge of
+      local ingredients, traditional grains, and the spices that give Sri Lankan cooking its unmistakable character.
+    </p>
+    <p>
+      Whether you want to explore a bustling spice market in Kandy, pick up fresh cinnamon and cardamom direct
+      from local vendors, or simply find the best family-run rice-and-curry spot that tourists never discover,
+      Mifras is your guide. He can identify ingredients, explain their uses in traditional recipes, and help
+      you shop authentically — without the tourist markup.
+    </p>
+    <ul>
+      <li><strong>Spice markets</strong> — cinnamon, cardamom, cloves, pepper, turmeric and more</li>
+      <li><strong>Local grains</strong> — red rice, kurakkan (finger millet), and traditional staples</li>
+      <li><strong>Fresh produce</strong> — seasonal fruits, vegetables, and herbs used in everyday Sri Lankan cooking</li>
+      <li><strong>Street food guidance</strong> — the best hoppers, kottu, and short eats from trusted local stalls</li>
+    </ul>
+  </div>
+</section>
+
 <section class="section" aria-labelledby="values-heading">
   <div class="container" style="max-width: 720px;">
     <span class="section-label">My Promise to You</span>
