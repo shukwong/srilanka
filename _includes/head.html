@@ -3,6 +3,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+  <!-- jekyll-seo-tag: generates title, description, canonical, OG, Twitter, and JSON-LD — placed first for correct Google indexing -->
+  {% seo %}
+
   <!-- Google Fonts — preconnect first, then load -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,13 +13,6 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-
-  <!-- Open Graph image (supplements jekyll-seo-tag) -->
-  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/mifras_with_van.jpg">
-  <meta property="og:image:alt" content="Mifras, Sri Lanka private driver, with his air-conditioned tour van">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/assets/images/mifras_with_van.jpg">
 
   <!-- Geo tags for local search relevance -->
   <meta name="geo.region" content="LK">
@@ -28,7 +24,4 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
 
   {% include google-analytics.html %}
-
-  <!-- jekyll-seo-tag: generates title, description, canonical, OG, Twitter, and JSON-LD -->
-  {% seo %}
 </head>
