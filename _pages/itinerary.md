@@ -34,6 +34,16 @@ permalink: /itinerary/
 
       <p class="itinerary-summary">{{ itinerary.summary }}</p>
 
+      {% if itinerary.illustration %}
+      <div class="itinerary-illustration">
+        <img src="{{ itinerary.illustration | relative_url }}"
+             alt="{{ itinerary.illustration_alt }}"
+             loading="lazy"
+             width="1200"
+             height="600">
+      </div>
+      {% endif %}
+
       <div class="itinerary-days">
         {% for day in itinerary.days %}
         <div class="day-card">
@@ -141,6 +151,19 @@ permalink: /itinerary/
   line-height: 1.7;
   margin-bottom: 2rem;
   font-size: 1.05rem;
+}
+
+.itinerary-illustration {
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.itinerary-illustration img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .itinerary-days {
