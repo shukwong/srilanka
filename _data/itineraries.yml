@@ -9,20 +9,20 @@
     - day: 1
       title: Sigiriya & Dambulla
       highlights:
-        - Morning: Sigiriya Lion Rock (UNESCO) — climb the ancient fortress and enjoy panoramic views
-        - Afternoon: Dambulla Cave Temple (UNESCO) — 153 Buddha statues and 2,100-year-old murals
-        - Evening: Settle into Habarana / Sigiriya village guesthouse
+        - "Morning: Sigiriya Lion Rock (UNESCO) — climb the ancient fortress and enjoy panoramic views"
+        - "Afternoon: Dambulla Cave Temple (UNESCO) — 153 Buddha statues and 2,100-year-old murals"
+        - "Evening: Settle into Habarana / Sigiriya village guesthouse"
     - day: 2
       title: Polonnaruwa Ancient City
       highlights:
-        - Morning: Polonnaruwa Archaeological Park (UNESCO) — Gal Vihara rock temple, royal palace ruins
-        - Afternoon: Minneriya National Park (optional add-on) — elephant gathering
-        - Evening: Local restaurant dinner and cultural village walk
+        - "Morning: Polonnaruwa Archaeological Park (UNESCO) — Gal Vihara rock temple, royal palace ruins"
+        - "Afternoon: Minneriya National Park (optional add-on) — elephant gathering"
+        - "Evening: Local restaurant dinner and cultural village walk"
     - day: 3
       title: Return with Scenic Stops
       highlights:
-        - Morning: Spice garden visit near Matale
-        - Afternoon: Kandy city highlights — Temple of the Tooth exterior, lakeside walk
+        - "Morning: Spice garden visit near Matale"
+        - "Afternoon: Kandy city highlights — Temple of the Tooth exterior, lakeside walk"
         - Transfer back to Colombo or your hotel
 
 - id: 5-day-highlights
@@ -38,13 +38,13 @@
       highlights:
         - Depart Colombo after breakfast
         - Pinnawala Elephant Orphanage en route
-        - Afternoon: Dambulla Cave Temple
+        - "Afternoon: Dambulla Cave Temple"
         - Overnight near Sigiriya
     - day: 2
       title: Sigiriya & Polonnaruwa
       highlights:
-        - Morning: Sigiriya Rock Fortress
-        - Afternoon: Polonnaruwa Ancient City
+        - "Morning: Sigiriya Rock Fortress"
+        - "Afternoon: Polonnaruwa Ancient City"
         - Overnight in Habarana or Trincomalee (beach option)
     - day: 3
       title: Kandy & Hill Country
