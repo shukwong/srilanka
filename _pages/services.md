@@ -28,7 +28,19 @@ permalink: /services/
         </div>
       </div>
       <p class="service-detail__description">{{ service.description }}</p>
-      {% if service.highlights %}
+      {% if service.itinerary_id %}
+        {% assign itin = site.data.itineraries | where: "id", service.itinerary_id | first %}
+        {% if itin %}
+        <ul class="service-highlights">
+          {% for day in itin.days %}
+          <li>Day {{ day.day }}: {{ day.title }}</li>
+          {% endfor %}
+        </ul>
+        <a href="{{ '/itinerary/' | relative_url }}#{{ itin.id }}" class="service-itinerary-link">
+          View detailed itinerary →
+        </a>
+        {% endif %}
+      {% elsif service.highlights %}
       <ul class="service-highlights">
         {% for item in service.highlights %}
         <li>{{ item }}</li>
@@ -115,6 +127,19 @@ permalink: /services/
   color: #1a6b7a;
   font-weight: 700;
   flex-shrink: 0;
+}
+
+.service-itinerary-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a6b7a;
+  text-decoration: none;
+}
+
+.service-itinerary-link:hover {
+  text-decoration: underline;
 }
 
 .grid-2 {
