@@ -12,9 +12,9 @@ baseurl: "/srilanka"   # ← repo name; remove if using a custom domain or user/
 # ──────────────────────────────────────────────────────────────
 driver:
   name: Mifras
-  phone: "+94 76 063 6310"
-  whatsapp: "94760636310"        # Digits only, no + or spaces, for wa.me links
-  whatsapp_display: "+94 76 063 6310"
+  phone: "+94 74 043 0425"
+  whatsapp: "94740430425"        # Digits only, no + or spaces, for wa.me links
+  whatsapp_display: "+94 74 043 0425"
   vehicle: "Air-conditioned Toyota KDH Van"
   experience_years: 10
 

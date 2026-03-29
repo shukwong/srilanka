@@ -1,0 +1,42 @@
+# ── Photos ───────────────────────────────────────────────────────────────────
+# Place photo files in: assets/images/gallery/
+# Add one entry per photo. caption is optional but recommended.
+#
+# photos:
+#   - file: photo-01.jpg
+#     caption: Sigiriya Rock Fortress
+#   - file: photo-02.jpg
+#     caption: Temple of the Tooth, Kandy
+#
+photos:
+  - file: 7a2d64a8-7845-466d-aa49-139086ca1700.jpg
+    caption: Nine Arches Bridge, Ella
+  - file: a1b4f9ec-ab61-456c-a150-961993b92008.jpg
+    caption: Elephant spotting on safari
+  - file: 5032f9ca-b60e-400b-97e1-f5b89362cd17.jpg
+    caption: Ready for a wildlife safari
+  - file: ee238789-cfc8-4b82-8d11-3e26f4aeb9cf.jpg
+    caption: Safari adventure
+  - file: c3edfc6b-bd73-40e1-b84d-7078396e6b64.jpg
+    caption: Climbing the ancient rock fortress
+  - file: 6afe25b7-80bd-4885-a4f6-d984660af202.jpg
+    caption: Traditional bullock cart ride
+  - file: b9b0b12b-0eae-43ac-80c7-8667d80ff089.jpg
+    caption: Tuk-tuk experience
+  - file: 397b7885-f2f2-4e6c-af78-c0a96910c536.jpg
+    caption: Exploring Sri Lanka's countryside
+  - file: 3b0ea1ec-ed43-4246-85a3-893c6a73558a.jpg
+    caption: Family tour stop
+  - file: f7d5b9eb-6117-46e7-8b67-6d94f0b8cae7.jpg
+    caption: Happy travellers in Sri Lanka
+
+# ── Videos ───────────────────────────────────────────────────────────────────
+# Upload videos to YouTube (unlisted is fine), then add entries below.
+# The youtube_id is the part after ?v= in the YouTube URL.
+# e.g. https://www.youtube.com/watch?v=AbCdEfGhIjK  →  youtube_id: AbCdEfGhIjK
+#
+# videos:
+#   - youtube_id: AbCdEfGhIjK
+#     title: Sri Lanka Tour Highlights
+#
+videos: []
