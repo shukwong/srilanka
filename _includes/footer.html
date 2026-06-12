@@ -95,8 +95,9 @@
   text-decoration: none;
   opacity: 0.8;
   transition: opacity 0.2s;
-  &:hover { opacity: 1; }
 }
+
+.footer-social a:hover { opacity: 1; }
 
 .site-footer h4 {
   color: #fff;
@@ -110,31 +111,38 @@
 .footer-links ul {
   list-style: none;
   padding: 0;
-  li { margin-bottom: 0.5rem; }
-  a {
-    color: rgba(255,255,255,0.65);
-    font-size: 0.88rem;
-    text-decoration: none;
-    transition: color 0.2s;
-    &:hover { color: #fff; }
-  }
 }
+
+.footer-links ul li { margin-bottom: 0.5rem; }
+
+.footer-links ul a {
+  color: rgba(255,255,255,0.65);
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links ul a:hover { color: #fff; }
 
 .footer-contact-list {
   list-style: none;
   padding: 0;
-  li { margin-bottom: 0.55rem; }
-  a {
-    color: rgba(255,255,255,0.65);
-    font-size: 0.85rem;
-    text-decoration: none;
-    transition: color 0.2s;
-    &:hover { color: #fff; }
-  }
-  li:not(:has(a)) {
-    font-size: 0.85rem;
-    color: rgba(255,255,255,0.65);
-  }
+}
+
+.footer-contact-list li { margin-bottom: 0.55rem; }
+
+.footer-contact-list a {
+  color: rgba(255,255,255,0.65);
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-contact-list a:hover { color: #fff; }
+
+.footer-contact-list li:not(:has(a)) {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.65);
 }
 
 .footer-languages {

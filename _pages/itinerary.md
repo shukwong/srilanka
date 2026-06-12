@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sri Lanka Tour Itineraries — 3, 5 & 7-Day Private Driver Tours
+title: Tour Itineraries
 description: >
   Sample itineraries for 3, 5, and 7-day private driver tours across Sri Lanka.
   Visit Sigiriya, Kandy, Ella, Galle, and Yala. All tours are fully customisable
@@ -39,8 +39,8 @@ permalink: /itinerary/
         <img src="{{ itinerary.illustration | relative_url }}"
              alt="{{ itinerary.illustration_alt }}"
              loading="lazy"
-             width="1200"
-             height="600">
+             width="1600"
+             height="872">
       </div>
       {% endif %}
 

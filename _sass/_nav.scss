@@ -103,7 +103,7 @@
       align-items: flex-start;
       gap: 0;
       position: fixed;
-      top: 60px;
+      top: 68px;
       left: 0;
       right: 0;
       bottom: 0;
@@ -111,6 +111,10 @@
       padding: 1.5rem $container-pad;
       overflow-y: auto;
       border-top: 1px solid $color-border;
+
+      @media (max-width: $bp-mobile) {
+        top: 60px;
+      }
 
       a {
         width: 100%;

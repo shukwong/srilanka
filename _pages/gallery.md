@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Photo Gallery — Sri Lanka Private Driver Mifras
+title: Photo Gallery
 description: >
   Photos of Mifras with happy travellers at Sri Lanka's top tourist spots.
   Real moments from private tours — Sigiriya, Kandy, Ella and beyond.
@@ -90,7 +90,7 @@ permalink: /gallery/
   <div class="container">
     <div class="cta-banner__content">
       <h2>Ready to Make Your Own Memories?</h2>
-      <p>Join hundreds of happy travellers. Book your private Sri Lanka tour today.</p>
+      <p>Join 100+ happy travellers. Book your private Sri Lanka tour today.</p>
       <div class="cta-banner__actions">
         <a href="https://wa.me/{{ site.driver.whatsapp }}?text=Hello%20Mifras%2C%20I%27d%20like%20to%20book%20a%20tour%20in%20Sri%20Lanka"
            class="btn btn--white btn--lg"
@@ -298,12 +298,14 @@ permalink: /gallery/
   var lbCaption = lightbox.querySelector('.lightbox__caption');
   var tiles     = Array.from(document.querySelectorAll('.photo-tile'));
   var current   = 0;
+  var lastFocused = null;
 
   if (tiles.length === 0) return;
 
   function show(index) {
     current = (index + tiles.length) % tiles.length;
     var tile = tiles[current];
+    lastFocused = tile;
     lbImg.src = tile.dataset.src;
     lbImg.alt = tile.querySelector('img').alt;
     lbCaption.textContent = tile.dataset.caption || '';
@@ -315,6 +317,7 @@ permalink: /gallery/
   function hide() {
     lightbox.hidden = true;
     document.body.style.overflow = '';
+    if (lastFocused) lastFocused.focus();
   }
 
   tiles.forEach(function (tile, i) {
@@ -334,6 +337,19 @@ permalink: /gallery/
     if (e.key === 'Escape')    hide();
     if (e.key === 'ArrowLeft') show(current - 1);
     if (e.key === 'ArrowRight') show(current + 1);
+    if (e.key === 'Tab') {
+      e.preventDefault();
+      var focusable = [
+        lightbox.querySelector('.lightbox__close'),
+        lightbox.querySelector('.lightbox__prev'),
+        lightbox.querySelector('.lightbox__next')
+      ];
+      var i = focusable.indexOf(document.activeElement);
+      var next = e.shiftKey
+        ? (i <= 0 ? focusable.length - 1 : i - 1)
+        : (i === focusable.length - 1 ? 0 : i + 1);
+      focusable[next].focus();
+    }
   });
 })();
 </script>

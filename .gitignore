@@ -4,4 +4,7 @@ _site/
 .jekyll-metadata
 vendor/
 .bundle/
-Gemfile.lock
+
+# Local tool state
+.claude/settings.local.json
+.omc/

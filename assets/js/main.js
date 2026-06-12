@@ -11,7 +11,7 @@
     navToggle.addEventListener('click', function () {
       var isOpen = siteNav.classList.toggle('is-open');
       navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      navToggle.classList.toggle('is-active', isOpen);
+      navToggle.classList.toggle('is-open', isOpen);
     });
 
     // Close menu when a nav link is clicked
@@ -19,7 +19,7 @@
       link.addEventListener('click', function () {
         siteNav.classList.remove('is-open');
         navToggle.setAttribute('aria-expanded', 'false');
-        navToggle.classList.remove('is-active');
+        navToggle.classList.remove('is-open');
       });
     });
 
@@ -28,7 +28,7 @@
       if (!siteNav.contains(e.target) && !navToggle.contains(e.target)) {
         siteNav.classList.remove('is-open');
         navToggle.setAttribute('aria-expanded', 'false');
-        navToggle.classList.remove('is-active');
+        navToggle.classList.remove('is-open');
       }
     });
   }
@@ -97,13 +97,5 @@
       }
     });
   });
-
-  // ============================================================
-  // WHATSAPP FLOAT — hide on contact page
-  // ============================================================
-  var whatsappFloat = document.querySelector('.whatsapp-float');
-  if (whatsappFloat && window.location.pathname.replace(/\/$/, '') === '/contact') {
-    whatsappFloat.style.display = 'none';
-  }
 
 })();

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Private Driver Services in Sri Lanka — Tours, Transfers & Day Trips
+title: Services & Day Trips
 description: >
   Book private driver services across Sri Lanka — Colombo airport transfers,
   day trips to Sigiriya and Kandy, and multi-day tour packages from 3 to 7+ days

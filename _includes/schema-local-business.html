@@ -1,24 +1,17 @@
-{% assign review_count = 0 %}
-{% assign rating_sum = 0 %}
-{% for review in site.data.testimonials %}
-  {% assign review_count = review_count | plus: 1 %}
-  {% assign rating_sum = rating_sum | plus: review.rating %}
-{% endfor %}
-{% assign avg_rating = rating_sum | times: 1.0 | divided_by: review_count %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "{{ site.title }}",
-  "description": "{{ site.description | strip_newlines | strip }}",
+  "@id": "{{ site.url }}{{ site.baseurl }}/#business",
+  "name": {{ site.title | jsonify }},
+  "description": {{ site.description | strip_newlines | strip | jsonify }},
   "url": "{{ site.url }}{{ site.baseurl }}/",
-  "telephone": "{{ site.driver.phone }}",
+  "telephone": {{ site.driver.phone | jsonify }},
   "image": "{{ site.url }}{{ site.baseurl }}/assets/images/mifras_with_van.jpg",
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
-    "addressCountry": "LK",
-    "addressRegion": "Sri Lanka"
+    "addressCountry": "LK"
   },
   "geo": {
     "@type": "GeoCoordinates",
@@ -28,13 +21,6 @@
   "areaServed": {
     "@type": "Country",
     "name": "Sri Lanka"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "{{ avg_rating }}",
-    "reviewCount": "{{ review_count }}",
-    "bestRating": "5",
-    "worstRating": "1"
   },
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",

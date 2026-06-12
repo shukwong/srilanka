@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Traveller Reviews — Sri Lanka Private Driver Mifras
+title: Traveller Reviews
 description: >
   Real 5-star reviews from travellers who explored Sri Lanka with Mifras as their
   private driver and guide. Read TripAdvisor and Google reviews about their experiences.
@@ -37,7 +37,7 @@ permalink: /testimonials/
           <div class="author-avatar" aria-hidden="true">{{ review.name | slice: 0 }}</div>
           <div class="author-info">
             <span class="author-name">{{ review.name }}</span>
-            <span class="author-meta">{% if review.country %}{{ review.country }} · {% endif %}{{ review.date }}</span>
+            {% if review.country or review.date %}<span class="author-meta">{% if review.country %}{{ review.country }} · {% endif %}{{ review.date }}</span>{% endif %}
           </div>
         </div>
         {% if review.tour %}
@@ -96,7 +96,7 @@ permalink: /testimonials/
   <div class="container">
     <div class="cta-banner__content">
       <h2>Ready to Create Your Own Story?</h2>
-      <p>Join hundreds of happy travellers. Book your private Sri Lanka tour today.</p>
+      <p>Join 100+ happy travellers. Book your private Sri Lanka tour today.</p>
       <div class="cta-banner__actions">
         <a href="https://wa.me/{{ site.driver.whatsapp }}?text=Hello%20Mifras%2C%20I%27d%20like%20to%20book%20a%20tour%20in%20Sri%20Lanka"
            class="btn btn--white btn--lg"
@@ -123,5 +123,3 @@ permalink: /testimonials/
   font-weight: 500;
 }
 </style>
-
-{% include schema-reviews.html %}
