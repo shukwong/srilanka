@@ -1,32 +1,58 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "{{ site.url }}{{ site.baseurl }}/#business",
-  "name": {{ site.title | jsonify }},
-  "description": {{ site.description | strip_newlines | strip | jsonify }},
-  "url": "{{ site.url }}{{ site.baseurl }}/",
-  "telephone": {{ site.driver.phone | jsonify }},
-  "image": "{{ site.url }}{{ site.baseurl }}/assets/images/mifras_with_van.jpg",
-  "priceRange": "$$",
-  "address": {
-    "@type": "PostalAddress",
-    "addressCountry": "LK"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 7.8731,
-    "longitude": 80.7718
-  },
-  "areaServed": {
-    "@type": "Country",
-    "name": "Sri Lanka"
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-    "opens": "00:00",
-    "closes": "23:59"
-  }
+  "@graph": [
+    {
+      "@type": ["TravelAgency", "LocalBusiness"],
+      "@id": "{{ site.url }}{{ site.baseurl }}/#business",
+      "name": {{ site.title | jsonify }},
+      "description": {{ site.description | strip_newlines | strip | jsonify }},
+      "url": "{{ site.url }}{{ site.baseurl }}/",
+      "telephone": {{ site.driver.phone | jsonify }},
+      "image": "{{ site.url }}{{ site.baseurl }}/assets/images/mifras_with_van.jpg",
+      {%- assign profiles = "" | split: "" -%}
+      {%- if site.social.facebook and site.social.facebook != "" -%}{%- assign profile_item = site.social.facebook | split: "|" -%}{%- assign profiles = profiles | concat: profile_item -%}{%- endif -%}
+      {%- if site.social.instagram and site.social.instagram != "" -%}{%- assign profile_item = site.social.instagram | split: "|" -%}{%- assign profiles = profiles | concat: profile_item -%}{%- endif -%}
+      {%- if site.social.tripadvisor and site.social.tripadvisor != "" -%}{%- assign profile_item = site.social.tripadvisor | split: "|" -%}{%- assign profiles = profiles | concat: profile_item -%}{%- endif -%}
+      {%- if profiles.size > 0 %}
+      "sameAs": {{ profiles | jsonify }},
+      {%- endif %}
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "LK"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Sri Lanka"
+      },
+      "knowsLanguage": ["English", "Sinhala", "Tamil"],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "reservations",
+        "telephone": {{ site.driver.phone | jsonify }},
+        "url": "https://wa.me/{{ site.driver.whatsapp }}",
+        "availableLanguage": ["English", "Sinhala", "Tamil"]
+      },
+      "founder": { "@id": "{{ site.url }}{{ site.baseurl }}/#person" },
+      "employee": { "@id": "{{ site.url }}{{ site.baseurl }}/#person" },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "{{ site.url }}{{ site.baseurl }}/#person",
+      "name": {{ site.driver.name | jsonify }},
+      "jobTitle": "Private Driver & Guide",
+      "worksFor": { "@id": "{{ site.url }}{{ site.baseurl }}/#business" },
+      "knowsLanguage": ["English", "Sinhala", "Tamil"],
+      "nationality": { "@type": "Country", "name": "Sri Lanka" },
+      "image": "{{ site.url }}{{ site.baseurl }}/assets/images/mifras_with_van.jpg",
+      "url": "{{ site.url }}{{ site.baseurl }}/about/"
+    }
+  ]
 }
 </script>

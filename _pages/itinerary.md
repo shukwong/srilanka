@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Tour Itineraries
+title: Sri Lanka Tour Itineraries
+heading: Sri Lanka Tour Itineraries — 3, 5 & 7 Days
 description: >
   Sample itineraries for 3, 5, and 7-day private driver tours across Sri Lanka.
   Visit Sigiriya, Kandy, Ella, Galle, and Yala. All tours are fully customisable
@@ -39,8 +40,8 @@ permalink: /itinerary/
         <img src="{{ itinerary.illustration | relative_url }}"
              alt="{{ itinerary.illustration_alt }}"
              loading="lazy"
-             width="1600"
-             height="872">
+             width="1200"
+             height="654">
       </div>
       {% endif %}
 
@@ -91,6 +92,13 @@ permalink: /itinerary/
         💬 Plan a Custom Tour
       </a>
     </div>
+    <p style="margin-top: 2rem;">
+      Arriving at Bandaranaike Airport? See my
+      <a href="{{ '/airport-transfers/' | relative_url }}">Colombo airport transfer service</a>.
+      Curious where these tours go? Browse the
+      <a href="{{ '/destinations/' | relative_url }}">destinations</a>, or read the
+      <a href="{{ '/faq/' | relative_url }}">FAQ</a> for booking questions.
+    </p>
   </div>
 </section>
 
@@ -244,3 +252,5 @@ permalink: /itinerary/
   }
 }
 </style>
+
+{% include schema-itineraries.html %}

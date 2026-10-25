@@ -12,7 +12,7 @@ permalink: /faq/
   <div class="container" style="max-width: 820px; margin: 0 auto;">
     <div class="section-header">
       <span class="section-label">Got Questions?</span>
-      <h2 id="faq-heading">Frequently Asked Questions</h2>
+      <h2 id="faq-heading">Common Questions About Booking a Private Driver in Sri Lanka</h2>
       <p class="section-subtitle">
         Everything you need to know before booking your Sri Lanka private driver tour.
         Can't find the answer you're looking for? Just WhatsApp me directly.

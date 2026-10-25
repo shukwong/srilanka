@@ -34,22 +34,18 @@ timezone: Asia/Colombo
 lang: en
 tagline: "Tours, Transfers & Day Trips"
 logo: /assets/images/mifras_with_van.jpg
-image:
-  path: /assets/images/mifras_with_van.jpg
-  height: 630
-  width: 1200
-  alt: "Mifras, Sri Lanka private driver, with his air-conditioned tour van"
 
 # Google Analytics — replace with your GA4 measurement ID (e.g. G-XXXXXXXXXX)
 google_analytics: "G-2X9PDR6L5S"
 
 # ──────────────────────────────────────────────────────────────
-# COLLECTIONS
+# PAGES
+# _pages/ holds regular Jekyll pages (each declares its own
+# permalink). Regular pages carry no implicit date, so
+# jekyll-seo-tag emits WebPage/og:type=website instead of
+# BlogPosting with a churning build timestamp.
 # ──────────────────────────────────────────────────────────────
-collections:
-  pages:
-    output: true
-    permalink: /:name/
+include: ["_pages"]
 
 defaults:
   - scope:
@@ -57,6 +53,18 @@ defaults:
       type: pages
     values:
       layout: page
+  - scope:
+      path: "google10ecc1cff69e70e6.html"
+    values:
+      sitemap: false
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /assets/images/mifras_with_van.jpg
+        width: 1000
+        height: 753
+        alt: "Mifras, Sri Lanka private driver, with his air-conditioned tour van"
 
 # ──────────────────────────────────────────────────────────────
 # PLUGINS
@@ -64,7 +72,6 @@ defaults:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-feed
 
 # ──────────────────────────────────────────────────────────────
 # BUILD SETTINGS

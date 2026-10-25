@@ -14,6 +14,9 @@ permalink: /testimonials/
       <h2 id="reviews-heading">What Travellers Say</h2>
       <p class="section-subtitle">
         Satisfied tourists from around the world.
+        <a href="https://www.tripadvisor.com/Attraction_Review-g293962-d14161887-Reviews-Sri_Lanka_Personal_Tour_Drivers-Colombo_Western_Province.html"
+           target="_blank" rel="noopener">Read independent reviews of Mifras on TripAdvisor</a>
+        (posted under the "Sri Lanka Personal Tour Drivers" listing — look for reviews that mention Mifras by name).
       </p>
     </div>
 
@@ -28,9 +31,12 @@ permalink: /testimonials/
         <div class="testimonial-screenshot">
           <img src="{{ review.screenshot | relative_url }}"
                alt="Screenshot of review by {{ review.name }}"
+               width="{{ review.screenshot_width }}"
+               height="{{ review.screenshot_height }}"
                loading="lazy">
         </div>
-        {% elsif review.text %}
+        {% endif %}
+        {% if review.text %}
         <p class="testimonial-text">"{{ review.text }}"</p>
         {% endif %}
         <div class="testimonial-author">

@@ -19,9 +19,12 @@
           <div class="testimonial-screenshot">
             <img src="{{ review.screenshot | relative_url }}"
                  alt="Screenshot of review by {{ review.name }}"
+                 width="{{ review.screenshot_width }}"
+                 height="{{ review.screenshot_height }}"
                  loading="lazy">
           </div>
-          {% elsif review.text %}
+          {% endif %}
+          {% if review.text %}
           <p class="testimonial-text">{{ review.text }}</p>
           {% endif %}
           <div class="testimonial-author">

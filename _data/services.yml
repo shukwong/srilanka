@@ -1,9 +1,11 @@
 - id: airport-transfer
   icon: ✈️
-  title: Airport Transfers
+  title: Colombo Airport Transfers (CMB)
+  page_url: /airport-transfers/
   description: >
-    Reliable, punctual pick-ups and drop-offs at Bandaranaike International Airport (CMB)
-    and Mattala Rajapaksa Airport (HRI). Available 24/7 with flight tracking included.
+    Reliable, punctual pick-ups and drop-offs at Colombo Bandaranaike International
+    Airport (CMB) and Mattala Rajapaksa Airport (HRI). Available 24/7 with flight
+    tracking included.
   highlights:
     - Flight tracking — never miss a connection
     - Meet & greet with name board

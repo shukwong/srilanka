@@ -94,7 +94,7 @@
     }
   }
 
-  @media (max-width: $bp-tablet) {
+  @media (max-width: $bp-desktop) {
     display: none;
 
     &.is-open {
@@ -170,7 +170,7 @@
     span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
   }
 
-  @media (max-width: $bp-tablet) {
+  @media (max-width: $bp-desktop) {
     display: flex;
   }
 }

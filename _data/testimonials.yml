@@ -35,15 +35,35 @@
   rating: 5
   source: tripadvisor
   screenshot: /assets/images/reviews/review-tripadvisor-1toptravelagent.jpg
+  screenshot_width: 540
+  screenshot_height: 1200
+  text: >
+    We had Mifras as our driver for 3 days while traveling around Sri Lanka, and it was
+    an excellent experience. He took us everywhere smoothly and safely, was always
+    punctual, kind, and very professional. His calm driving and friendly attitude made
+    our trip even more enjoyable. Highly recommended!
 
 - name: Zia W
   date: February 2026
   rating: 5
   source: tripadvisor
   screenshot: /assets/images/reviews/review-tripadvisor-zia-w.jpg
+  screenshot_width: 540
+  screenshot_height: 1200
+  text: >
+    We had a great experience driving seven days in Sri Lanka with our amazing driver
+    Mifras. He was great at explaining things on the way about the nature, animals,
+    cities, history etc. and his driving skills were great, we felt very safe! We have
+    an easy correspondence with the company over WhatsApp before departure and also
+    with Mifras underway.
 
 - name: Majid Ali
   rating: 5
   source: google
   screenshot: /assets/images/reviews/review-google-majid-ali.jpg
-
+  screenshot_width: 1079
+  screenshot_height: 1003
+  text: >
+    We used Sri Lanka Personal Tours for our week long trip and it was a brilliant
+    choice. Our driver Mifras was excellent, knowledgeable, helpful and friendly. The
+    van was clean and comfortable, we would definitely recommend this company.

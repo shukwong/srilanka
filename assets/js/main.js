@@ -1,6 +1,61 @@
 (function () {
   'use strict';
 
+  // Contact events contain only channel and placement, never enquiry details.
+  function trackContact(channel, location) {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'contact_click', {
+        contact_channel: channel,
+        contact_location: location,
+        page_path: window.location.pathname
+      });
+    }
+  }
+
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest('a[href]');
+    if (!link) return;
+    var url = new URL(link.href, window.location.href);
+    var channel = url.hostname === 'wa.me' ? 'whatsapp' :
+      url.protocol === 'tel:' ? 'phone' : null;
+    if (!channel) return;
+    var location = link.getAttribute('data-contact-location') ||
+      (link.closest('header') ? 'header' : link.closest('footer') ? 'footer' :
+        link.classList.contains('whatsapp-float') ? 'floating-button' :
+          link.closest('.hero') ? 'hero' : 'page-content');
+    trackContact(channel, location);
+  });
+
+  // Build a message locally; WhatsApp remains the explicit send step.
+  var quoteForm = document.getElementById('quote-form');
+  if (quoteForm) {
+    if (new URLSearchParams(window.location.search).get('service') === 'airport-transfer') {
+      quoteForm.elements.service.value = 'Airport transfer';
+    }
+    quoteForm.hidden = false;
+    quoteForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+      if (!quoteForm.reportValidity()) return;
+      var fields = new FormData(quoteForm);
+      function value(name, fallback) {
+        return String(fields.get(name) || '').trim() || fallback;
+      }
+      var message = [
+        'Hello Mifras! I\'d like to check availability and get a quote.',
+        'Service: ' + value('service', 'Not sure yet'),
+        'Travel dates: ' + value('dates', 'Not sure yet'),
+        'Adults: ' + value('adults', '2'),
+        'Children: ' + value('children', '0'),
+        'Pickup: ' + value('pickup', 'To discuss'),
+        'Destinations / trip length / interests: ' + value('plans', 'To discuss'),
+        'Flight details: ' + value('flight', 'Not provided'),
+        'Luggage / other requests: ' + value('needs', 'None specified')
+      ].join('\n');
+      trackContact('whatsapp', 'quote-form');
+      window.location.assign('https://wa.me/' + quoteForm.dataset.whatsapp + '?text=' + encodeURIComponent(message));
+    });
+  }
+
   // ============================================================
   // MOBILE NAVIGATION TOGGLE
   // ============================================================

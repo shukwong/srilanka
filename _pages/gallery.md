@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Photo Gallery
+title: Sri Lanka Tour Photos
+heading: Sri Lanka Tour Photo Gallery
 description: >
   Photos of Mifras with happy travellers at Sri Lanka's top tourist spots.
   Real moments from private tours — Sigiriya, Kandy, Ella and beyond.
@@ -25,9 +26,9 @@ permalink: /gallery/
               aria-label="View photo{% if photo.caption %}: {{ photo.caption }}{% endif %}"
               data-src="{{ photo.file | prepend: '/assets/images/gallery/' | relative_url }}"
               data-caption="{{ photo.caption | default: '' }}">
-        <img src="{{ photo.file | prepend: '/assets/images/gallery/' | relative_url }}"
+        <img src="{{ photo.file | prepend: '/assets/images/gallery/thumbs/' | relative_url }}"
              alt="{{ photo.caption | default: 'Mifras with clients on tour in Sri Lanka' }}"
-             loading="lazy">
+             {% if forloop.index > 3 %}loading="lazy"{% elsif forloop.first %}fetchpriority="high"{% endif %}>
         {% if photo.caption %}
         <span class="photo-caption" aria-hidden="true">{{ photo.caption }}</span>
         {% endif %}

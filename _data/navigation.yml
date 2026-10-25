@@ -7,6 +7,9 @@
 - title: Services
   url: /services/
 
+- title: Destinations
+  url: /destinations/
+
 - title: Itineraries
   url: /itinerary/
 
@@ -18,4 +21,3 @@
 
 - title: FAQ
   url: /faq/
-

@@ -2,6 +2,8 @@
 layout: page
 title: About
 heading: About Mifras
+seo:
+  type: AboutPage
 description: >
   Meet Mifras — your trusted English-speaking Sri Lanka private driver and guide
   with 10+ years of experience. Licensed, insured, and 5-star rated by travellers
@@ -13,7 +15,7 @@ permalink: /about/
   <div class="container">
     <div class="about-intro">
       <div class="about-intro__image">
-        <img src="{{ '/assets/images/mifras_with_van.jpg' | relative_url }}" alt="Mifras, Sri Lanka private driver and guide" width="1168" height="880" style="width: 100%; border-radius: 8px;">
+        <img src="{{ '/assets/images/mifras_with_van.jpg' | relative_url }}" alt="Mifras, Sri Lanka private driver and guide" width="1000" height="753" fetchpriority="high" style="width: 100%; border-radius: 8px;">
       </div>
       <div class="about-intro__content">
         <span class="section-label">Your Driver &amp; Guide</span>

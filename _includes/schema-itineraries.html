@@ -1,0 +1,35 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {% for trip in site.data.itineraries %}
+    {
+      "@type": "TouristTrip",
+      "@id": "{{ site.url }}{{ site.baseurl }}/itinerary/#{{ trip.id }}",
+      "name": {{ trip.title | jsonify }},
+      "description": {{ trip.summary | strip_newlines | strip | jsonify }},
+      "url": "{{ site.url }}{{ site.baseurl }}/itinerary/#{{ trip.id }}",
+      {% if trip.illustration %}"image": "{{ site.url }}{{ site.baseurl }}{{ trip.illustration }}",{% endif %}
+      "provider": { "@id": "{{ site.url }}{{ site.baseurl }}/#business" },
+      "itinerary": {
+        "@type": "ItemList",
+        "numberOfItems": {{ trip.days | size }},
+        "itemListElement": [
+          {% for d in trip.days %}
+          {
+            "@type": "ListItem",
+            "position": {{ d.day }},
+            "item": {
+              "@type": "TouristDestination",
+              "name": {{ d.title | jsonify }},
+              "description": {{ d.highlights | join: "; " | jsonify }}
+            }
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>

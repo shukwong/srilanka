@@ -28,6 +28,7 @@
       <div class="footer-links">
         <h4>Quick Links</h4>
         <ul>
+          <li><a href="{{ '/private-driver-cost/' | relative_url }}">Request a Price Quote</a></li>
           {% for item in site.data.navigation %}
             <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
           {% endfor %}
@@ -37,11 +38,13 @@
       <div class="footer-contact">
         <h4>Contact Mifras</h4>
         <ul class="footer-contact-list">
+          <li><a href="{{ '/contact/' | relative_url }}">Check availability &amp; get a quote</a></li>
           <li>
             <a href="https://wa.me/{{ site.driver.whatsapp }}" target="_blank" rel="noopener">
-              💬 WhatsApp
+              💬 WhatsApp: {{ site.driver.whatsapp_display }}
             </a>
           </li>
+          <li><a href="tel:{{ site.driver.phone | remove: ' ' }}" data-contact-location="footer">Call: {{ site.driver.phone }}</a></li>
         </ul>
       </div>
     </div>

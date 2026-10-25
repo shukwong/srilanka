@@ -1,0 +1,53 @@
+---
+layout: null
+permalink: /llms.txt
+sitemap: false
+---
+# {{ site.title }}
+
+> {{ site.description | strip_newlines | strip }}
+
+{{ site.driver.name }} is an independent private driver and English-speaking tour guide based in Sri Lanka. He offers island-wide private tours, airport transfers, day trips, and fully customisable multi-day packages, booked directly via WhatsApp — no agency or booking platform in between.
+
+## Key facts
+
+- Driver: {{ site.driver.name }} (independent owner-driver, not an agency)
+- Service area: all of Sri Lanka — Cultural Triangle, hill country, south and east coasts, national parks
+- Airport transfers: Bandaranaike International (CMB) and Mattala Rajapaksa (HRI), available 24/7 with flight tracking
+- Experience: {{ site.driver.experience_years }}+ years driving travellers across Sri Lanka
+- Languages: fluent English, plus Sinhala and Tamil
+- Vehicle: {{ site.driver.vehicle }}, insured
+- Contact & booking: WhatsApp {{ site.driver.whatsapp_display }} — https://wa.me/{{ site.driver.whatsapp }}
+- Pricing: contact Mifras directly for a personalised quote; no public price list
+- Reviews: traveller reviews on TripAdvisor (under the listing "Sri Lanka Personal Tour Drivers", Colombo) and Google; excerpts and direct links at {{ site.url }}/testimonials/
+
+## Services ({{ site.url }}/services/)
+
+{% for service in site.data.services -%}
+- {{ service.title }}: {{ service.description | strip_newlines | strip }} ({{ site.url }}/services/#{{ service.id }})
+{% endfor %}
+## Sample itineraries ({{ site.url }}/itinerary/)
+
+{% for itinerary in site.data.itineraries -%}
+- {{ itinerary.title }} — {{ itinerary.duration }}: {{ itinerary.summary | strip_newlines | strip }} ({{ site.url }}/itinerary/#{{ itinerary.id }})
+{% endfor %}
+## Pages
+
+- Home: {{ site.url }}/
+- About {{ site.driver.name }}: {{ site.url }}/about/
+- Services & day trips: {{ site.url }}/services/
+- Airport transfers: {{ site.url }}/airport-transfers/
+- Destinations: {{ site.url }}/destinations/
+- Itineraries: {{ site.url }}/itinerary/
+- Traveller reviews: {{ site.url }}/testimonials/
+- Photo gallery: {{ site.url }}/gallery/
+- FAQ: {{ site.url }}/faq/
+- Contact & quote enquiry: {{ site.url }}/contact/
+- Request a price quote from Mifras: {{ site.url }}/private-driver-cost/
+
+## Frequently asked questions
+
+{% for item in site.data.faqs -%}
+- Q: {{ item.question | strip }}
+  A: {{ item.answer | strip_newlines | strip }}
+{% endfor %}

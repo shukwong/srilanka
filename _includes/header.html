@@ -15,12 +15,10 @@
           {{ item.title }}
         </a>
       {% endfor %}
-      <a href="https://wa.me/{{ site.driver.whatsapp }}?text=Hello%20Mifras%2C%20I%27d%20like%20to%20book%20a%20tour"
+      <a href="{{ '/contact/' | relative_url }}"
          class="nav-cta"
-         target="_blank"
-         rel="noopener"
-         aria-label="Book via WhatsApp">
-        📱 Book Now
+         {% if page.url == '/contact/' %}aria-current="page"{% endif %}>
+        Get a Quote
       </a>
     </nav>
 

@@ -3,6 +3,13 @@
     The easiest way is to send me a WhatsApp message — I respond quickly and we can
     discuss your requirements, dates, and budget directly. I don't require a booking
     platform or third-party agency; everything is arranged directly between us.
+    You can see everything I offer on the <a href="/services/">services and day trips page</a>.
+
+- question: How much does a private driver in Sri Lanka cost?
+  answer: >
+    Every trip is different. Contact Mifras directly for a personalised quote.
+    Share your travel dates, number of passengers, pickup location, and the places
+    you'd like to visit. <a href="/contact/">Get a quote from Mifras</a>.
 
 - question: Do you speak English?
   answer: >
@@ -14,6 +21,11 @@
   answer: >
     I use a well-maintained, air-conditioned Toyota KDH Van. The van is always
     clean and fully insured.
+
+- question: Are you a licensed driver?
+  answer: >
+    Yes — I'm a government-licensed driver with over 10 years of professional experience
+    driving tourists across Sri Lanka, and my van is fully insured.
 
 - question: Can you recommend accommodation?
   answer: >
@@ -39,7 +51,8 @@
   answer: >
     I track your flight in real time. If your flight is delayed, I'll adjust my
     pick-up time accordingly at no extra charge. Just send me your flight number
-    when booking and I'll take care of the rest.
+    when booking and I'll take care of the rest. Read more about my
+    <a href="/airport-transfers/">airport transfer service</a>.
 
 - question: Can we adjust the itinerary on the fly?
   answer: >
@@ -47,18 +60,29 @@
     group tour. If you discover somewhere you'd love to spend more time, or want to
     skip a planned stop, just let me know. It's your holiday and your pace.
 
+- question: Why hire a private driver instead of joining a group tour?
+  answer: >
+    With a private driver the itinerary is built around you — no fixed groups,
+    no rushing, and you can change plans on the fly: stay longer where you love
+    it, skip what doesn't interest you. You travel in a private air-conditioned
+    vehicle at your own pace, with one local driver-guide who knows the roads,
+    the food, and the stories behind every stop. Group tours are often cheaper
+    per seat, but you trade away that flexibility.
+
 - question: Do you arrange safaris and national park visits?
   answer: >
     Yes. For parks like Yala, Minneriya, and Udawalawe I can arrange the jeep safari
     and coordinate the booking on your behalf. I can accompany you on the safari jeep,
     or drop you at the park entrance and meet you afterward — whichever you prefer.
+    Yala features on my <a href="/itinerary/#7-day-explorer">7-Day Island Explorer itinerary</a>.
 
 - question: Can the tour include a train journey?
   answer: >
     Absolutely — Sri Lanka's scenic train routes are a highlight, especially through
     the hill country. I can drop you at the departure station, drive your larger
     luggage to the destination, and meet you when you arrive. It's a great way to
-    enjoy the famous views without worrying about your bags.
+    enjoy the famous views without worrying about your bags. The hill-country ride
+    fits neatly into the <a href="/itinerary/#5-day-highlights">5-Day Highlights itinerary</a>.
 
 - question: What is the best time to visit Sri Lanka?
   answer: >
@@ -66,3 +90,29 @@
     is ideal for the south and west coasts, plus the Cultural Triangle. April–September
     suits the east coast and hill country. I can advise on the best routing based
     on your travel dates — just ask!
+
+- question: Where can I read reviews from your previous clients?
+  answer: >
+    You can read verified 5-star reviews from my clients on TripAdvisor (posted under the
+    "Sri Lanka Personal Tour Drivers" listing in Colombo — look for reviews that mention
+    Mifras by name) and on Google. I also collect them on my
+    <a href="/testimonials/">testimonials page</a>.
+
+# ── TODO-owner: confirm the facts below, fill in the [bracketed] placeholders,
+# ── then uncomment. Do NOT publish with placeholders in place.
+#- question: How many passengers can you take?
+#  answer: >
+#    My air-conditioned Toyota KDH van comfortably seats [N] passengers plus luggage —
+#    ideal for couples, families, and small groups.
+#
+#- question: Can you provide a child seat?
+#  answer: >
+#    [TODO-owner: yes/no + how to request one when booking.]
+#
+#- question: What payment methods do you accept?
+#  answer: >
+#    [TODO-owner: cash (LKR/USD/EUR?), bank transfer, card? Is a deposit required?]
+#
+#- question: What is your cancellation policy?
+#  answer: >
+#    [TODO-owner: state notice period and any deposit/refund terms.]

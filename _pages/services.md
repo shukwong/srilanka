@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Services & Day Trips
+title: Day Trips & Tour Services
+heading: Private Driver Services — Day Trips & Multi-Day Tours
 description: >
   Book private driver services across Sri Lanka — Colombo airport transfers,
   day trips to Sigiriya and Kandy, and multi-day tour packages from 3 to 7+ days
@@ -37,7 +38,7 @@ permalink: /services/
           {% endfor %}
         </ul>
         <a href="{{ '/itinerary/' | relative_url }}#{{ itin.id }}" class="service-itinerary-link">
-          View detailed itinerary →
+          View the full {{ itin.title }} itinerary →
         </a>
         {% endif %}
       {% elsif service.highlights %}
@@ -46,6 +47,11 @@ permalink: /services/
         <li>{{ item }}</li>
         {% endfor %}
       </ul>
+      {% endif %}
+      {% if service.page_url %}
+      <a href="{{ service.page_url | relative_url }}" class="service-itinerary-link">
+        Full airport transfer details →
+      </a>
       {% endif %}
       <a href="https://wa.me/{{ site.driver.whatsapp }}?text=Hello%20Mifras%2C%20I%27m%20interested%20in%20your%20{{ service.title | uri_escape }}%20service"
          class="btn btn--primary"
@@ -62,8 +68,10 @@ permalink: /services/
   <div class="container">
     <div class="cta-banner__content">
       <h2>Get Your Personalised Quote</h2>
-      <p>Every trip is different. Message me with your dates and ideas and I'll send you a tailored itinerary and price within hours.</p>
+      <p>Every trip is different. Share your dates and ideas so we can discuss a tailored itinerary and price.</p>
       <div class="cta-banner__actions">
+        <a href="{{ '/contact/' | relative_url }}" class="btn btn--outline-white btn--lg">Prepare My Trip Enquiry</a>
+        <a href="{{ '/private-driver-cost/' | relative_url }}" class="btn btn--outline-white btn--lg">Ask Mifras About Prices</a>
         <a href="https://wa.me/{{ site.driver.whatsapp }}?text=Hello%20Mifras%2C%20I%27d%20like%20a%20quote%20for%20a%20Sri%20Lanka%20tour"
            class="btn btn--white btn--lg"
            target="_blank"
